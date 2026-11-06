@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://consultant-management-iq.netlify.app/sitemap.xml
