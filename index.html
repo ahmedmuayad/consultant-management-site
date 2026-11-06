@@ -1,0 +1,1115 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Consultant Management | استشارات وإدارة المشاريع الإنشائية في العراق</title>
+<meta name="description" content="Consultant Management: جداول زمنية، جداول كميات وكلفة، تقارير إنجاز، وثائق مناقصات ومتابعة مواقع لشركات المقاولات وأصحاب المشاريع في جميع محافظات العراق. خبرة 22 سنة.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Consultant Management | إدارة المشاريع الإنشائية في العراق">
+<meta property="og:description" content="جداول زمنية، جداول كميات، تقارير إنجاز ومتابعة مواقع في جميع محافظات العراق. احسب كلفة مشروعك واطلب عرض سعر خلال 24 ساعة.">
+<meta property="og:image" content="https://consultant-management-iq.netlify.app/cm-logo-full.png">
+<meta property="og:url" content="https://consultant-management-iq.netlify.app/">
+<link rel="canonical" href="https://consultant-management-iq.netlify.app/">
+<meta name="theme-color" content="#16191c">
+<link rel="icon" href="cm-logo-mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="cm-logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<style>
+/* Layout: corporate one-pager. Dark site-drawing hero, stats strip, services grid, samples, packages, yellow CTA band, contact */
+:root{
+  --bg:#f6f5f2; --surface:#ffffff; --fg:#16191c; --muted:#5b6066; --line:#e1dfd9; --soft:#efede8;
+  --accent:#e2a300; --accent-ink:#16191c;
+  --ink:#16191c; --ink-fg:#f1efe9; --ink-muted:#a4a9ae; --ink-line:#2e3338;
+  --ar:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;
+  --en:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --mono:"IBM Plex Mono",Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111315; --surface:#191c1f; --fg:#ebe9e4; --muted:#a4a9ae; --line:#2a2e33; --soft:#1f2326;
+  --accent:#f0b419; --ink:#0b0d0e; --ink-line:#24282c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111315; --surface:#191c1f; --fg:#ebe9e4; --muted:#a4a9ae; --line:#2a2e33; --soft:#1f2326;
+  --accent:#f0b419; --ink:#0b0d0e; --ink-line:#24282c; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--ar);font-size:16px;line-height:1.75;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{text-wrap:balance;line-height:1.3}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+[data-l]{display:none}
+[hidden]{display:none!important}
+html[lang="ar"] [data-l="ar"],html[lang="en"] [data-l="en"],html[lang="ckb"] [data-l="ku"]{display:revert}
+html[lang="ckb"]{--ar:"Noto Sans Arabic","IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif}
+.ltr{direction:ltr;unicode-bidi:isolate}
+
+/* ---------- header ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--ink);color:var(--ink-fg);border-bottom:1px solid var(--ink-line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand svg{width:42px;height:42px;flex:none}
+.brand b{display:block;font-family:var(--en);font-weight:700;font-size:19px;letter-spacing:.06em;line-height:1.05;white-space:nowrap}
+.brand small{display:block;font-size:11.5px;color:var(--ink-muted);white-space:nowrap}
+.links{display:flex;gap:22px;margin-inline-start:auto;font-size:15px}
+.links a{text-decoration:none;color:var(--ink-muted)}
+.links a:hover{color:var(--ink-fg)}
+.tools{display:flex;gap:10px;align-items:center}
+.langs{display:flex;border:1px solid var(--ink-line);border-radius:6px;overflow:hidden}
+.lang{font:600 13px var(--ar);background:transparent;color:var(--ink-muted);border:0;padding:7px 10px;cursor:pointer}
+.lang+.lang{border-inline-start:1px solid var(--ink-line)}
+.lang:hover{color:var(--ink-fg)}
+.lang[aria-pressed="true"]{background:var(--ink-line);color:var(--ink-fg)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;text-decoration:none;padding:11px 20px;border-radius:7px;border:1.5px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.yellow{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{border-color:var(--ink-line);color:var(--ink-fg)}
+.btn.ghost:hover{border-color:var(--ink-muted)}
+.btn.dark{background:var(--accent-ink);color:#fff}
+.nav .btn{padding:8px 14px;font-size:14px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--ink);color:var(--ink-fg);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-block:72px 56px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:14px;color:var(--ink-muted)}
+.kicker::before{content:"";width:28px;height:3px;background:var(--accent)}
+.hero h1{font-size:clamp(36px,5.2vw,60px);font-weight:700;margin-top:16px;line-height:1.2}
+:lang(en) .hero h1{font-family:var(--en);text-transform:uppercase;letter-spacing:.01em;font-size:clamp(42px,6.2vw,74px);line-height:1}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .sub{font-size:18px;color:var(--ink-muted);margin-top:18px;max-width:34em}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.drawing{min-width:0}
+.drawing svg{width:100%;height:auto;display:block}
+.stats{border-top:1px solid var(--ink-line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:0}
+.stat{padding:26px 0;padding-inline-end:20px;border-inline-start:1px solid var(--ink-line);padding-inline-start:22px}
+.stat:first-child{border-inline-start:0;padding-inline-start:0}
+.stat b{display:block;font-family:var(--mono);font-weight:500;font-size:34px;line-height:1.1;color:var(--ink-fg)}
+.stat span{font-size:14px;color:var(--ink-muted)}
+
+/* ---------- sections ---------- */
+section.sec .wrap{padding-block:88px}
+section.sec + section.sec .wrap{border-top:1px solid var(--line)}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:16px 48px;align-items:end;margin-bottom:40px}
+.eyebrow{font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.02em}
+:lang(en) .eyebrow{text-transform:uppercase;letter-spacing:.1em}
+.head h2{font-size:clamp(28px,3.6vw,40px);font-weight:700;margin-top:6px}
+:lang(en) .head h2{font-family:var(--en);text-transform:uppercase;font-size:clamp(34px,4.4vw,50px);line-height:1.05}
+.head p{color:var(--muted);font-size:17px}
+
+/* clients */
+.clients{background:var(--soft)}
+.clients .wrap{display:flex;flex-wrap:wrap;gap:14px 36px;align-items:center;padding-block:22px;font-size:15px}
+.clients .lbl{color:var(--muted);font-size:13px}
+.clients span.c{display:inline-flex;align-items:center;gap:8px;font-weight:600}
+.clients span.c::before{content:"";width:7px;height:7px;background:var(--accent);transform:rotate(45deg)}
+
+/* services */
+.svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:12px;min-width:0;transition:border-color .2s,transform .2s}
+.svc:hover{border-color:var(--fg);transform:translateY(-2px)}
+.svc .ic{width:48px;height:48px;border-radius:10px;background:var(--ink);display:grid;place-items:center}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:19px;font-weight:600}
+.svc p{color:var(--muted);font-size:15px}
+.svc ul{margin:0;padding-inline-start:18px;font-size:14.5px;color:var(--fg)}
+.svc ul li{margin:3px 0}
+.svc ul li::marker{color:var(--accent)}
+.svc .meta{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);display:flex;justify-content:space-between;align-items:baseline;font-size:13.5px;color:var(--muted)}
+.svc .meta b{font-family:var(--mono);font-size:20px;color:var(--fg);font-weight:500}
+
+/* why */
+.why{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
+.quote{background:var(--ink);color:var(--ink-fg);border-radius:14px;padding:36px;position:relative}
+.quote big{display:block;font-family:var(--mono);font-size:84px;line-height:1;color:var(--accent);font-weight:500}
+.quote p{font-size:19px;margin-top:10px}
+.quote .who{margin-top:22px;padding-top:18px;border-top:1px solid var(--ink-line);font-size:14px;color:var(--ink-muted)}
+.quote .who b{display:block;color:var(--ink-fg);font-size:16px}
+.creds{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px;font-size:13.5px;color:var(--ink-muted)}
+.creds li{padding-inline-start:16px;position:relative}
+.creds li::before{content:"";position:absolute;inset-inline-start:0;top:.7em;width:6px;height:6px;background:var(--accent);border-radius:1px}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:28px 32px}
+.pt h3{font-size:17px;font-weight:600;display:flex;gap:10px;align-items:center}
+.pt h3::before{content:"";width:10px;height:10px;border:2px solid var(--accent);flex:none}
+.pt p{color:var(--muted);font-size:15px;margin-top:6px}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;list-style:none;margin:0;padding:0;counter-reset:s;position:relative}
+.steps li{counter-increment:s;padding:0 0 0;padding-inline-end:24px;min-width:0}
+.steps li .n{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.steps li .n::before{content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:14px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:var(--accent-ink);font-weight:500;flex:none}
+.steps li .n::after{content:"";height:1px;background:var(--line);flex:1}
+.steps li:last-child .n::after{display:none}
+.steps h3{font-size:17px;font-weight:600}
+.steps p{color:var(--muted);font-size:15px;margin-top:4px}
+
+/* samples */
+.samples{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.sample{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
+.sample .pv{background:var(--soft);padding:22px;aspect-ratio:16/10;display:grid;align-content:center;gap:7px;max-width:100%}
+.sample .body{padding:20px 22px}
+.sample h3{font-size:17px;font-weight:600}
+.sample p{color:var(--muted);font-size:14.5px;margin-top:4px}
+.tag{display:inline-block;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 8px;margin-top:10px}
+.g-row{display:grid;grid-template-columns:repeat(20,1fr);height:11px}
+.g-row i{border-radius:2px;background:var(--line)}
+.g-row i.d{background:var(--fg)}
+.g-row i.c{background:var(--accent)}
+.boq{display:grid;gap:6px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.boq div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:4px}
+.boq div.t{color:var(--fg);font-weight:500;border-bottom:0;background:var(--accent);color:var(--accent-ink);padding:3px 6px;border-radius:3px}
+.bars{display:flex;align-items:flex-end;gap:10px;height:96px}
+.bars span{flex:1;border-radius:3px 3px 0 0;background:var(--line);position:relative}
+.bars span i{position:absolute;inset:auto 0 0;background:var(--fg);border-radius:3px 3px 0 0}
+
+/* packages */
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.pack{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:30px;display:flex;flex-direction:column;min-width:0;position:relative}
+.pack.main{background:var(--ink);color:var(--ink-fg);border-color:var(--ink)}
+.pack.main .for,.pack.main .per{color:var(--ink-muted)}
+.pack .badge{position:absolute;top:-12px;inset-inline-start:28px;background:var(--accent);color:var(--accent-ink);font-size:12.5px;font-weight:700;padding:2px 12px;border-radius:5px}
+.pack h3{font-size:21px;font-weight:700}
+.pack .for{color:var(--muted);font-size:14.5px;min-height:3.2em}
+.pack .amt{font-family:var(--mono);font-size:46px;line-height:1;margin-top:18px;font-weight:500}
+.pack .per{font-size:13.5px;color:var(--muted)}
+.pack ul{margin:22px 0 26px;padding-inline-start:18px;font-size:15px}
+.pack ul li{margin:6px 0}
+.pack ul li::marker{color:var(--accent)}
+.pack .btn{margin-top:auto;justify-content:center;border-color:var(--line);color:var(--fg)}
+.pack.main .btn{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.note{color:var(--muted);font-size:14px;margin-top:20px}
+.dl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;margin-top:24px;padding:18px 22px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.dl b{display:block;font-size:16px}
+.dl span{color:var(--muted);font-size:14px}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0;margin:0}
+.proj .ph{aspect-ratio:4/3;background:var(--soft) repeating-linear-gradient(135deg,transparent 0 14px,var(--line) 14px 15px);display:block;width:100%;object-fit:cover}
+.proj figcaption{padding:18px 20px}
+.proj.noimg{border-top:3px solid var(--accent)}
+.proj .where span+span{font-family:var(--mono);direction:ltr;unicode-bidi:isolate}
+.proj h3{font-size:17px;font-weight:600}
+.proj .where{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--muted);font-size:13.5px;margin-top:4px}
+.proj p{font-size:14.5px;margin-top:8px}
+
+/* CTA band */
+.band{background:var(--accent);color:var(--accent-ink)}
+.band .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;padding-block:44px}
+.band h2{font-size:clamp(24px,3vw,34px);font-weight:700}
+.band p{font-size:16px;opacity:.8;margin-top:4px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.cards{display:grid;gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px;display:flex;align-items:center;gap:16px;min-width:0}
+.card .ic{width:44px;height:44px;border-radius:10px;background:var(--soft);display:grid;place-items:center;flex:none}
+.card .ic svg{width:22px;height:22px}
+.card .txt{min-width:0;flex:1}
+.card .k{font-size:13px;color:var(--muted)}
+.card .v{font-family:var(--mono);font-size:15.5px;overflow-wrap:anywhere;direction:ltr;text-align:start}
+:dir(rtl) .card .v{text-align:right}
+.copy{font:500 13px var(--ar);background:none;color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:5px 12px;cursor:pointer;flex:none}
+.copy:hover{border-color:var(--fg)}
+.checklist{margin:20px 0 0;padding-inline-start:20px;columns:2;column-gap:28px;font-size:15px}
+.checklist li{margin:6px 0;break-inside:avoid}
+.checklist li::marker{color:var(--accent)}
+
+footer{background:var(--ink);color:var(--ink-muted);font-size:13.5px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;padding-block:28px}
+footer .brand b{color:var(--ink-fg)}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .links{display:none}
+  .tools{margin-inline-start:auto}
+  .hero .wrap{grid-template-columns:1fr;padding-block:48px 36px}
+  .drawing{max-width:520px}
+  .svcs,.samples,.packs,.projects{grid-template-columns:1fr 1fr}
+  .why,.contact,.head{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:32px}
+  .steps li:nth-child(2) .n::after{display:none}
+}
+@media (max-width:640px){
+  .nav .wrap{gap:12px}
+  .brand small,.nav .btn span{display:none}
+  .brand b{font-size:16px}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat{border-inline-start:0;padding-inline-start:0;border-top:1px solid var(--ink-line);padding-block:18px}
+  .stat:nth-child(-n+2){border-top:0}
+  .svcs,.samples,.packs,.points,.steps,.projects{grid-template-columns:1fr}
+  .steps li .n::after{display:none}
+  section.sec .wrap{padding-block:60px}
+  .checklist{columns:1}
+  .card{flex-wrap:wrap}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.svc{transition:none}}
+:root{--danger:#b3261e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--danger:#ff8a80}}
+:root[data-theme="dark"]{--danger:#ff8a80}
+
+/* estimator + forms */
+.est{display:grid;grid-template-columns:1fr 1.1fr;gap:24px;align-items:stretch}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;min-width:0}
+.field{display:grid;gap:6px;margin-bottom:16px;min-width:0}
+.field>label,.flabel{font-size:14px;font-weight:600}
+.field small,.hint{color:var(--muted);font-size:12.5px}
+input[type=number],input[type=text],input[type=tel],select,textarea{font:inherit;font-size:15px;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;width:100%;min-width:0}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{border:1px solid var(--line);border-radius:8px;padding:10px 6px;text-align:center;cursor:pointer;font-size:14px;font-weight:500;background:var(--bg);line-height:1.3}
+.seg label small{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:2px}
+.seg input:checked+label{background:var(--ink);color:var(--ink-fg);border-color:var(--ink)}
+.seg input:checked+label small{color:var(--ink-muted)}
+.seg input:focus-visible+label{outline:3px solid var(--accent)}
+.result{background:var(--ink);color:var(--ink-fg);border-radius:12px;padding:28px;min-width:0;display:flex;flex-direction:column}
+.result .k{font-size:13px;color:var(--ink-muted)}
+.result .big{font-family:var(--mono);font-size:clamp(26px,3.4vw,40px);line-height:1.15;margin-top:4px;direction:ltr;font-weight:500}
+:dir(rtl) .result .big{text-align:right}
+.result .range{font-family:var(--mono);font-size:13px;color:var(--ink-muted);margin-top:4px}
+.result .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--ink-line)}
+.result .grid b{display:block;font-family:var(--mono);font-size:17px;font-weight:500}
+.result .range bdi{direction:ltr;unicode-bidi:isolate}
+.split{display:flex;height:12px;border-radius:3px;overflow:hidden;margin-top:22px;direction:ltr}
+.split i{display:block}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:6px 18px;margin-top:12px;font-size:13px;color:var(--ink-muted)}
+.legend span{display:flex;justify-content:space-between;gap:8px}
+.legend em{font-style:normal;display:flex;align-items:center;gap:6px}
+.legend em::before{content:"";width:9px;height:9px;border-radius:2px;background:var(--c)}
+.legend b{font-family:var(--mono);font-weight:500;color:var(--ink-fg);font-size:12.5px}
+.disc{font-size:12.5px;color:var(--ink-muted);margin-top:18px}
+.result .btn{margin-top:auto;align-self:flex-start}
+.result .disc+.btn{margin-top:18px}
+
+.gov{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.gov>span{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:14.5px;font-weight:500;display:flex;justify-content:space-between;align-items:center;gap:6px;min-width:0}
+.gov>span small{font-size:11px;color:var(--muted);font-weight:500}
+.gov>span.hq{background:var(--ink);color:var(--ink-fg);border-color:var(--ink)}
+.gov>span.hq small{color:var(--accent)}
+
+.faq{display:grid;gap:10px;max-width:880px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0 20px}
+.faq summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:600;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--mono);color:var(--accent);font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--muted);padding-bottom:18px;font-size:15px}
+
+.qform{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:28px;margin-top:22px}
+.req{color:var(--danger)}
+.err{color:var(--danger);font-size:14px;font-weight:500;min-height:1.4em;margin:0 0 8px}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn.line{border-color:var(--line);color:var(--fg);background:none;font-family:inherit;cursor:pointer}
+.btn.line:hover{border-color:var(--fg)}
+.ok{background:var(--soft);border-radius:8px;padding:12px 14px;font-size:14px;margin-top:14px}
+.preview{white-space:pre-wrap;font-family:var(--mono);font-size:13px;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:12px;overflow-x:auto}
+
+.fab{position:fixed;z-index:8;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:calc(18px + env(safe-area-inset-left,0px));width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .15s}
+.fab:hover{transform:scale(1.06)}
+.fab svg{width:30px;height:30px}
+
+@media (max-width:980px){
+  .est{grid-template-columns:1fr}
+  .gov{grid-template-columns:repeat(4,1fr)}
+  .result .grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .gov{grid-template-columns:1fr 1fr}
+  .row2{grid-template-columns:1fr}
+  .panel,.result,.qform{padding:20px}
+  .legend{grid-template-columns:1fr}
+}
+.drawing svg{direction:ltr}
+.nav .wrap>*,.hero .wrap>*,.brand>span{min-width:0}
+@media (max-width:640px){
+  .brand svg{width:36px;height:36px}
+  .brand b{white-space:normal;font-size:14px;letter-spacing:.04em}
+  .lang{padding:6px 7px;font-size:12px}
+  .nav .wrap>.tools{flex:none;gap:8px}
+  .hero h1{font-size:clamp(30px,9vw,40px)}
+}
+@media (prefers-reduced-motion:no-preference){
+  .crane-hook{animation:hook 5s ease-in-out infinite alternate}
+  @keyframes hook{from{transform:translateY(0)}to{transform:translateY(26px)}}
+}
+</style>
+
+<!-- ======================= HEADER ======================= -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Consultant Management">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><defs> <radialGradient id="cmTile" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#353c43"/><stop offset="1" stop-color="#15181b"/></radialGradient> <linearGradient id="cmAmber" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd24d"/><stop offset=".55" stop-color="#e2a300"/><stop offset="1" stop-color="#a87400"/></linearGradient> <linearGradient id="cmAmberDeep" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b98100"/><stop offset="1" stop-color="#6e4b00"/></linearGradient> <linearGradient id="cmSteel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#dfe3e6"/><stop offset="1" stop-color="#aab1b7"/></linearGradient> <radialGradient id="cmSphere" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#d9dde0"/><stop offset="1" stop-color="#7d868e"/></radialGradient> <radialGradient id="cmSphereA" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#fff1b8"/><stop offset=".45" stop-color="#ffc21a"/><stop offset="1" stop-color="#a87400"/></radialGradient> <filter id="cmDrop" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0.8" dy="1.4" stdDeviation="1" flood-color="#000" flood-opacity=".55"/></filter> <filter id="cmGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.2"/></filter> </defs> <rect width="64" height="64" rx="13" fill="url(#cmTile)"/> <rect x=".6" y=".6" width="62.8" height="62.8" rx="12.4" fill="none" stroke="#fff" stroke-opacity=".08" stroke-width="1.2"/> <path d="M34.7 24 A14 14 0 1 0 23 47.4" fill="none" stroke="url(#cmAmberDeep)" stroke-width="6" stroke-linecap="round" transform="translate(1.2 1.6)"/> <path d="M34.7 24 A14 14 0 1 0 34.7 43" fill="none" stroke="#2a3036" stroke-width="5.5" stroke-linecap="round"/> <path d="M34.7 24 A14 14 0 1 0 23 47.4" fill="none" stroke="url(#cmAmber)" stroke-width="6" stroke-linecap="round" filter="url(#cmDrop)"/> <path d="M27 20 A12 12 0 0 0 13 31" fill="none" stroke="#fff6d6" stroke-width="1.3" stroke-linecap="round" opacity=".75"/> <polyline points="39,45 39,22 47.5,34 56,22 56,45" fill="none" stroke="#4b535a" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" transform="translate(.9 1.2)"/> <polyline points="39,45 39,22 47.5,34 56,22 56,45" fill="none" stroke="url(#cmSteel)" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round"/> <g filter="url(#cmDrop)" fill="url(#cmSphere)"><circle cx="39" cy="45" r="3"/><circle cx="39" cy="22" r="3"/><circle cx="56" cy="22" r="3"/><circle cx="56" cy="45" r="3"/></g> <circle cx="47.5" cy="34" r="5.5" fill="#ffb800" opacity=".55" filter="url(#cmGlow)"/> <circle cx="47.5" cy="34" r="3.9" fill="url(#cmSphereA)"/></svg>
+      <span><b>CONSULTANT MANAGEMENT</b><small><span data-l="ar">استشارات وإدارة المشاريع الإنشائية</span><span data-l="ku">ڕاوێژکاری و بەڕێوەبردنی پڕۆژە بیناسازییەکان</span><span data-l="en">Construction consulting &amp; PM</span></small></span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#services"><span data-l="ar">الخدمات</span><span data-l="ku">خزمەتگوزارییەکان</span><span data-l="en">Services</span></a>
+      <a href="#estimate"><span data-l="ar">حاسبة الكلفة</span><span data-l="ku">ژمێرەری تێچوون</span><span data-l="en">Cost estimator</span></a>
+      <a href="#packages"><span data-l="ar">الباقات</span><span data-l="ku">پاکێجەکان</span><span data-l="en">Packages</span></a>
+      <a href="#faq"><span data-l="ar">الأسئلة</span><span data-l="ku">پرسیارەکان</span><span data-l="en">FAQ</span></a>
+      <a href="#contact"><span data-l="ar">تواصل</span><span data-l="ku">پەیوەندی</span><span data-l="en">Contact</span></a>
+    </nav>
+    <div class="tools">
+      <div class="langs" role="group" aria-label="Language">
+        <button class="lang" type="button" data-set="ar" lang="ar">عربي</button>
+        <button class="lang" type="button" data-set="ckb" lang="ckb">کوردی</button>
+        <button class="lang" type="button" data-set="en" lang="en">EN</button>
+      </div>
+      <a class="btn yellow" href="https://wa.me/9647876979292" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+        <span><span data-l="ar">واتساب</span><span data-l="ku">واتسئاپ</span><span data-l="en">WhatsApp</span></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="kicker"><span data-l="ar">مكتب استشاري · بغداد · نعمل في جميع محافظات العراق</span><span data-l="ku">نووسینگەی ڕاوێژکاری · بەغدا · لە هەموو پارێزگاکانی عێراق کار دەکەین</span><span data-l="en">Consulting office · Baghdad · Working across all of Iraq</span></span>
+      <h1>
+        <span data-l="ar">نُنهي مشروعك <em>في وقته</em><br>وضمن ميزانيته</span><span data-l="ku">پڕۆژەکەت <em>لە کاتی خۆیدا</em><br>و لەناو بودجەکەیدا تەواو دەکەین</span>
+        <span data-l="en">Your project, <em>on time</em> and on budget</span>
+      </h1>
+      <p class="sub">
+        <span data-l="ar">تخطيط وإدارة المشاريع الإنشائية لشركات المقاولات والمطورين وأصحاب المشاريع: جداول زمنية، جداول كميات، تقارير إنجاز، ومتابعة موقع، بخبرة 22 سنة.</span><span data-l="ku">پلاندانان و بەڕێوەبردنی پڕۆژە بیناسازییەکان بۆ کۆمپانیا بەڵێندەرەکان، گەشەپێدەران و خاوەن پڕۆژەکان: خشتەی کات، خشتەی بڕەکان، ڕاپۆرتی پێشکەوتن و بەدواداچوونی شوێنی کار، بە 22 ساڵ ئەزموون.</span>
+        <span data-l="en">Planning and management for contractors, developers and owners: schedules, bills of quantities, progress reports and site follow-up, backed by 22 years in construction.</span>
+      </p>
+      <div class="cta">
+        <a class="btn yellow" href="#contact"><span data-l="ar">اطلب عرض سعر</span><span data-l="ku">داوای نرخ بکە</span><span data-l="en">Request a quote</span></a>
+        <a class="btn ghost" href="#estimate"><span data-l="ar">احسب كلفة مشروعك</span><span data-l="ku">تێچووی پڕۆژەکەت بژمێرە</span><span data-l="en">Estimate your cost</span></a>
+      </div>
+    </div>
+
+    <div class="drawing" aria-hidden="true">
+      <svg viewBox="0 0 440 330" fill="none">
+        <!-- grid -->
+        <g stroke="#2e3338" stroke-width="1">
+          <path d="M20 290H430"/>
+          <path d="M60 40V300M140 40V300M220 40V300M300 40V300"/>
+        </g>
+        <!-- completed floors -->
+        <g fill="#22272b">
+          <rect x="60" y="240" width="240" height="50"/>
+          <rect x="60" y="190" width="240" height="50"/>
+          <rect x="60" y="140" width="240" height="50"/>
+        </g>
+        <!-- frame -->
+        <g stroke="#a4a9ae" stroke-width="3">
+          <path d="M60 290V140M140 290V140M220 290V140M300 290V140"/>
+          <path d="M50 290H310M50 240H310M50 190H310M50 140H310"/>
+        </g>
+        <!-- floor under construction -->
+        <g stroke="#e2a300" stroke-width="3">
+          <path d="M60 140V90M140 140V90"/>
+          <path d="M50 90H150"/>
+        </g>
+        <g stroke="#e2a300" stroke-width="2" stroke-dasharray="6 6">
+          <path d="M220 140V90M300 140V90M150 90H310"/>
+        </g>
+        <!-- levels -->
+        <g font-family="IBM Plex Mono, Consolas, monospace" font-size="11" fill="#a4a9ae">
+          <text x="318" y="294">±0.00</text>
+          <text x="318" y="244">+3.50</text>
+          <text x="318" y="194">+7.00</text>
+          <text x="318" y="144">+10.50</text>
+          <text x="318" y="94" fill="#e2a300">+14.00</text>
+        </g>
+        <!-- crane -->
+        <g stroke="#e2a300" stroke-width="2.5">
+          <path d="M392 290V28"/>
+          <path d="M384 290V28"/>
+          <path d="M384 40L392 52M392 64L384 76M384 88L392 100M392 112L384 124M384 136L392 148M392 160L384 172M384 184L392 196M392 208L384 220M384 232L392 244M392 256L384 268" stroke-width="1.5"/>
+          <path d="M170 28H420"/>
+          <path d="M170 36H392"/>
+          <path d="M388 28V10L420 28M388 10L170 28" stroke-width="1.5"/>
+          <rect x="404" y="36" width="16" height="14" fill="#e2a300"/>
+        </g>
+        <g class="crane-hook">
+          <path d="M230 36V64" stroke="#a4a9ae" stroke-width="1.5"/>
+          <rect x="214" y="64" width="32" height="10" fill="#a4a9ae"/>
+        </g>
+        <!-- dimension -->
+        <g stroke="#5b6066" stroke-width="1">
+          <path d="M60 312H300M60 306V318M300 306V318"/>
+        </g>
+        <text x="180" y="326" text-anchor="middle" font-family="IBM Plex Mono, Consolas, monospace" font-size="11" fill="#5b6066">24.00 m</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>22</b><span><span data-l="ar">سنة خبرة إنشائية</span><span data-l="ku">ساڵ ئەزموونی بیناسازی</span><span data-l="en">years in construction</span></span></div>
+      <div class="stat"><b>6</b><span><span data-l="ar">خدمات متخصصة</span><span data-l="ku">خزمەتگوزاریی پسپۆڕ</span><span data-l="en">specialised services</span></span></div>
+      <div class="stat"><b>24h</b><span><span data-l="ar">لإرسال عرض السعر</span><span data-l="ku">بۆ ناردنی نرخ</span><span data-l="en">to send your quote</span></span></div>
+      <div class="stat"><b>18</b><span><span data-l="ar">محافظة عراقية نغطيها</span><span data-l="ku">پارێزگای عێراق کە کاری تێدا دەکەین</span><span data-l="en">Iraqi governorates covered</span></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="clients">
+  <div class="wrap">
+    <span class="lbl"><span data-l="ar">نعمل مع</span><span data-l="ku">کار دەکەین لەگەڵ</span><span data-l="en">We work with</span></span>
+    <span class="c"><span data-l="ar">شركات المقاولات</span><span data-l="ku">کۆمپانیا بەڵێندەرەکان</span><span data-l="en">Contractors</span></span>
+    <span class="c"><span data-l="ar">المطورين العقاريين</span><span data-l="ku">گەشەپێدەرانی خانوبەرە</span><span data-l="en">Developers</span></span>
+    <span class="c"><span data-l="ar">أصحاب البيوت والمباني</span><span data-l="ku">خاوەن خانوو و بیناکان</span><span data-l="en">Home &amp; building owners</span></span>
+    <span class="c"><span data-l="ar">المتقدمين للمناقصات</span><span data-l="ku">بەشداربووانی تێندەرەکان</span><span data-l="en">Tender bidders</span></span>
+  </div>
+</div>
+
+<!-- ======================= SERVICES ======================= -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">الخدمات</span><span data-l="ku">خزمەتگوزارییەکان</span><span data-l="en">Services</span></span>
+        <h2><span data-l="ar">كل ما يحتاجه مشروعك من التخطيط حتى التسليم</span><span data-l="ku">هەموو ئەوەی پڕۆژەکەت پێویستی پێیەتی، لە پلاندانانەوە تا ڕادەستکردن</span><span data-l="en">From first plan to handover</span></h2>
+      </div>
+      <p><span data-l="ar">تُسلَّم كل خدمة بملفات قابلة للتعديل (Excel، MS Project، Primavera، PDF) مع تعديلين مجاناً.</span><span data-l="ku">هەموو خزمەتگوزارییەک بە فایلی دەستکاریکراو ڕادەست دەکرێت (Excel، MS Project، Primavera، PDF) لەگەڵ دوو جار گۆڕانکاریی بێبەرامبەر.</span><span data-l="en">Every service is delivered as editable files (Excel, MS Project, Primavera, PDF) with two free revisions.</span></p>
+    </div>
+
+    <div class="svcs">
+      <article class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 6h8M7 12h10M12 18h9" stroke="#e2a300"/><path d="M3 3v18" stroke="#fff"/></svg></div>
+        <h3><span data-l="ar">الجدول الزمني للمشروع</span><span data-l="ku">خشتەی کاتی پڕۆژە</span><span data-l="en">Project schedule</span></h3>
+        <p><span data-l="ar">خطة كاملة من الموافقات حتى التسليم تُظهر ما يجب إنجازه كل أسبوع.</span><span data-l="ku">پلانێکی تەواو لە مۆڵەتەکانەوە تا ڕادەستکردن، کە نیشان دەدات هەموو هەفتەیەک چی دەبێت تەواو بکرێت.</span><span data-l="en">A full plan from permits to handover, showing what must happen each week.</span></p>
+        <ul>
+          <li><span data-l="ar">تقسيم الأعمال ومدد الفعاليات</span><span data-l="ku">دابەشکردنی کارەکان و ماوەی چالاکییەکان</span><span data-l="en">Work breakdown and durations</span></li>
+          <li><span data-l="ar">المسار الحرج ومخطط Gantt</span><span data-l="ku">ڕێڕەوی هەستیار و هێڵکاریی Gantt</span><span data-l="en">Critical path and Gantt chart</span></li>
+        </ul>
+        <div class="meta"><span><span data-l="ar">3–5 أيام · يبدأ من</span><span data-l="ku">3–5 ڕۆژ · دەستپێک لە</span><span data-l="en">3–5 days · from</span></span><b>$50</b></div>
+      </article>
+
+      <article class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#fff"/><path d="M8 8h8M8 12h8M8 16h4" stroke="#e2a300"/></svg></div>
+        <h3><span data-l="ar">جداول الكميات والكلفة</span><span data-l="ku">خشتەی بڕەکان و تێچوون</span><span data-l="en">BOQ &amp; cost estimate</span></h3>
+        <p><span data-l="ar">حساب الكميات من المخططات وتسعيرها بأسعار السوق الحالية في محافظة المشروع.</span><span data-l="ku">ژماردنی بڕەکان لە نەخشەکانەوە و نرخاندنیان بە نرخی ئێستای بازاڕ لە پارێزگای پڕۆژەکە.</span><span data-l="en">Quantity take-off from drawings, priced at current local market rates.</span></p>
+        <ul>
+          <li><span data-l="ar">الكلفة الكلية وكلفة المتر المربع</span><span data-l="ku">کۆی تێچوون و تێچووی هەر مەترێکی چوارگۆشە</span><span data-l="en">Total cost and cost per m²</span></li>
+          <li><span data-l="ar">ملف Excel يتحدّث تلقائياً</span><span data-l="ku">فایلی Excel کە خۆکارانە نوێ دەبێتەوە</span><span data-l="en">Self-updating Excel file</span></li>
+        </ul>
+        <div class="meta"><span><span data-l="ar">4–7 أيام · يبدأ من</span><span data-l="ku">4–7 ڕۆژ · دەستپێک لە</span><span data-l="en">4–7 days · from</span></span><b>$70</b></div>
+      </article>
+
+      <article class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 20V4" stroke="#fff"/><path d="M4 20h16" stroke="#fff"/><path d="M8 16v-4M12 16V8M16 16v-6" stroke="#e2a300"/></svg></div>
+        <h3><span data-l="ar">تقارير الإنجاز</span><span data-l="ku">ڕاپۆرتی پێشکەوتن</span><span data-l="en">Progress reports</span></h3>
+        <p><span data-l="ar">تقرير أسبوعي أو شهري يوضّح للمالك أين وصل المشروع بالأرقام والصور.</span><span data-l="ku">ڕاپۆرتی هەفتانە یان مانگانە کە بە ژمارە و وێنە بۆ خاوەنەکەی ڕوون دەکاتەوە پڕۆژەکە گەیشتووەتە کوێ.</span><span data-l="en">Weekly or monthly reports that show the owner where the project stands.</span></p>
+        <ul>
+          <li><span data-l="ar">المخطط مقابل الفعلي</span><span data-l="ku">پلاندانراو بەرامبەر بە ڕاستەقینە</span><span data-l="en">Planned versus actual</span></li>
+          <li><span data-l="ar">المشاكل والإجراءات والسلامة</span><span data-l="ku">کێشەکان، ڕێکارەکان و سەلامەتی</span><span data-l="en">Issues, actions and safety</span></li>
+        </ul>
+        <div class="meta"><span><span data-l="ar">شهرياً · يبدأ من</span><span data-l="ku">مانگانە · دەستپێک لە</span><span data-l="en">Monthly · from</span></span><b>$40</b></div>
+      </article>
+
+      <article class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="5" y="4" width="14" height="17" rx="2" stroke="#fff"/><path d="M9 4V2h6v2" stroke="#fff"/><path d="M9 12l2 2 4-4" stroke="#e2a300"/></svg></div>
+        <h3><span data-l="ar">وثائق المناقصات</span><span data-l="ku">بەڵگەنامەکانی تێندەر</span><span data-l="en">Tender documents</span></h3>
+        <p><span data-l="ar">تجهيز ملف العطاء ومقارنة عروض المقاولين مع توصية مكتوبة.</span><span data-l="ku">ئامادەکردنی فایلی تێندەر و بەراوردکردنی پێشنیاری بەڵێندەران لەگەڵ ڕاسپاردەیەکی نووسراو.</span><span data-l="en">Bid packages and contractor offer comparison with a written recommendation.</span></p>
+        <ul>
+          <li><span data-l="ar">الكميات والمواصفات والجدول</span><span data-l="ku">بڕەکان، تایبەتمەندییەکان و خشتەی کات</span><span data-l="en">Quantities, specs and schedule</span></li>
+          <li><span data-l="ar">جدول مقارنة العروض</span><span data-l="ku">خشتەی بەراوردکردنی پێشنیارەکان</span><span data-l="en">Offer comparison table</span></li>
+        </ul>
+        <div class="meta"><span><span data-l="ar">5–10 أيام · يبدأ من</span><span data-l="ku">5–10 ڕۆژ · دەستپێک لە</span><span data-l="en">5–10 days · from</span></span><b>$120</b></div>
+      </article>
+
+      <article class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 16a8 8 0 0 1 16 0" stroke="#e2a300"/><path d="M2 16h20v3H2zM12 8V5" stroke="#fff"/></svg></div>
+        <h3><span data-l="ar">تنسيق ومتابعة الموقع</span><span data-l="ku">هەماهەنگی و بەدواداچوونی شوێنی کار</span><span data-l="en">Site coordination</span></h3>
+        <p><span data-l="ar">زيارات موقع، محاضر اجتماعات، ومتابعة المقاولين الثانويين في جميع محافظات العراق.</span><span data-l="ku">سەردانی شوێنی کار، کۆنووسی کۆبوونەوەکان و بەدواداچوونی بەڵێندەرە لاوەکییەکان لە هەموو پارێزگاکانی عێراق.</span><span data-l="en">Site visits, meeting minutes and subcontractor follow-up anywhere in Iraq.</span></p>
+        <ul>
+          <li><span data-l="ar">تقرير لكل زيارة</span><span data-l="ku">ڕاپۆرتێک بۆ هەر سەردانێک</span><span data-l="en">A report for every visit</span></li>
+          <li><span data-l="ar">مراجعة المستخلصات قبل الصرف</span><span data-l="ku">پێداچوونەوەی مستەخلەسەکان پێش پارەدان</span><span data-l="en">Payment certificate review</span></li>
+        </ul>
+        <div class="meta"><span><span data-l="ar">للزيارة · يبدأ من</span><span data-l="ku">بۆ هەر سەردانێک · دەستپێک لە</span><span data-l="en">Per visit · from</span></span><b>$30</b></div>
+      </article>
+
+      <article class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#fff"/><path d="M3 9h18M9 9v12" stroke="#e2a300"/></svg></div>
+        <h3><span data-l="ar">نظام إدارة للشركة</span><span data-l="ku">سیستەمی بەڕێوەبردن بۆ کۆمپانیا</span><span data-l="en">Company PM setup</span></h3>
+        <p><span data-l="ar">قوالب جاهزة لمتابعة الموقع اليومي والصرفيات والمستخلصات مع تدريب فريقك.</span><span data-l="ku">قاڵبی ئامادە بۆ بەدواداچوونی ڕۆژانەی شوێنی کار، خەرجییەکان و مستەخلەسەکان، لەگەڵ ڕاهێنانی تیمەکەت.</span><span data-l="en">Ready templates for daily site logs, expenses and payments, plus team training.</span></p>
+        <ul>
+          <li><span data-l="ar">تقرير يومي للموقع</span><span data-l="ku">ڕاپۆرتی ڕۆژانەی شوێنی کار</span><span data-l="en">Daily site report</span></li>
+          <li><span data-l="ar">الصرفيات مقابل الميزانية</span><span data-l="ku">خەرجی بەرامبەر بە بودجە</span><span data-l="en">Spend versus budget</span></li>
+        </ul>
+        <div class="meta"><span><span data-l="ar">5–7 أيام · يبدأ من</span><span data-l="ku">5–7 ڕۆژ · دەستپێک لە</span><span data-l="en">5–7 days · from</span></span><b>$80</b></div>
+      </article>
+    </div>
+    <div class="dl">
+      <div>
+        <b><span data-l="ar">كتالوج الخدمات والأسعار</span><span data-l="ku">کاتالۆگی خزمەتگوزاری و نرخەکان</span><span data-l="en">Services &amp; prices catalog</span></b>
+        <span><span data-l="ar">كل الخدمات والباقات في ملف واحد · PDF · 6 صفحات</span><span data-l="ku">هەموو خزمەتگوزاری و پاکێجەکان لە یەک فایلدا · PDF · 6 لاپەڕە · بە عەرەبی</span><span data-l="en">All services and packages in one file · PDF · 6 pages · Arabic</span></span>
+      </div>
+      <a class="btn yellow" id="cat-dl" href="Consultant-Management-Services-Catalog.pdf" download target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+        <span><span data-l="ar">تحميل الكتالوج</span><span data-l="ku">داگرتنی کاتالۆگ</span><span data-l="en">Download catalog</span></span>
+      </a>
+    </div>
+    <div class="dl">
+      <div>
+        <b><span data-l="ar">ملف الشركة (بروفايل)</span><span data-l="ku">پرۆفایلی کۆمپانیا</span><span data-l="en">Company profile</span></b>
+        <span><span data-l="ar">من نحن، المؤسس، سجل المشاريع، الخدمات والتغطية · PDF · 6 صفحات</span><span data-l="ku">ئێمە کێین، دامەزرێنەر، پڕۆژەکان، خزمەتگوزاری و ناوچەکان · PDF · 6 لاپەڕە · بە عەرەبی و ئینگلیزی</span><span data-l="en">About us, founder, project record, services and coverage · PDF · 6 pages · Arabic &amp; English</span></span>
+      </div>
+      <a class="btn yellow" id="prof-dl" href="Consultant-Management-Company-Profile.pdf" download target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+        <span><span data-l="ar">تحميل البروفايل</span><span data-l="ku">داگرتنی پرۆفایل</span><span data-l="en">Download profile</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ESTIMATOR ======================= -->
+<section class="sec" id="estimate">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">حاسبة الكلفة</span><span data-l="ku">ژمێرەری تێچوون</span><span data-l="en">Cost estimator</span></span>
+        <h2><span data-l="ar">كم سيكلّف مشروعك؟</span><span data-l="ku">پڕۆژەکەت چەند تێدەچێت؟</span><span data-l="en">What will your project cost?</span></h2>
+      </div>
+      <p><span data-l="ar">أدخل المساحة وعدد الطوابق ومستوى الإنهاء، واحصل على تقدير أولي للكلفة والمدة خلال ثوانٍ.</span><span data-l="ku">ڕووبەر، ژمارەی نهۆمەکان و ئاستی تەواوکاری بنووسە، و لە چەند چرکەیەکدا خەمڵاندنێکی سەرەتایی بۆ تێچوون و ماوە وەربگرە.</span><span data-l="en">Enter the area, floors and finish level for an instant first estimate of cost and duration.</span></p>
+    </div>
+    <div class="est">
+      <form class="panel" id="estForm" novalidate>
+        <div class="field">
+          <label for="e-type"><span data-l="ar">نوع المبنى</span><span data-l="ku">جۆری بینا</span><span data-l="en">Building type</span></label>
+          <select id="e-type"></select>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="e-area"><span data-l="ar">مساحة الطابق (م²)</span><span data-l="ku">ڕووبەری نهۆم (م²)</span><span data-l="en">Floor area (m²)</span></label>
+            <input id="e-area" type="number" inputmode="numeric" min="20" max="20000" step="10" value="150">
+          </div>
+          <div class="field">
+            <label for="e-floors"><span data-l="ar">عدد الطوابق</span><span data-l="ku">ژمارەی نهۆمەکان</span><span data-l="en">Number of floors</span></label>
+            <input id="e-floors" type="number" inputmode="numeric" min="1" max="40" step="1" value="2">
+          </div>
+        </div>
+        <div class="field">
+          <span class="flabel"><span data-l="ar">مستوى الإنهاء</span><span data-l="ku">ئاستی تەواوکاری</span><span data-l="en">Finish level</span></span>
+          <div class="seg" role="radiogroup">
+            <input type="radio" name="e-fin" id="f-eco" value="eco"><label for="f-eco"><span data-l="ar">اقتصادي</span><span data-l="ku">ئابووری</span><span data-l="en">Economy</span></label>
+            <input type="radio" name="e-fin" id="f-std" value="std" checked><label for="f-std"><span data-l="ar">متوسط</span><span data-l="ku">مامناوەند</span><span data-l="en">Standard</span></label>
+            <input type="radio" name="e-fin" id="f-pre" value="pre"><label for="f-pre"><span data-l="ar">فاخر</span><span data-l="ku">بەرز</span><span data-l="en">Premium</span></label>
+          </div>
+        </div>
+        <p class="hint"><span data-l="ar">الحاسبة تشمل الهيكل والإنهاءات والخدمات، ولا تشمل سعر الأرض أو الأثاث.</span><span data-l="ku">ژمێرەرەکە پەیکەر، تەواوکاری و خزمەتگوزارییەکان دەگرێتەوە، بەڵام نرخی زەوی و کەلوپەلی ناوماڵ ناگرێتەوە.</span><span data-l="en">Includes structure, finishes and services. Excludes land and furniture.</span></p>
+      </form>
+
+      <div class="result" aria-live="polite">
+        <span class="k"><span data-l="ar">الكلفة التقديرية</span><span data-l="ku">تێچووی خەمڵێنراو</span><span data-l="en">Estimated cost</span></span>
+        <div class="big" id="r-iqd">—</div>
+        <div class="range" id="r-range"></div>
+        <div class="grid">
+          <div><span class="k"><span data-l="ar">بالدولار</span><span data-l="ku">بە دۆلار</span><span data-l="en">In USD</span></span><b id="r-usd">—</b></div>
+          <div><span class="k"><span data-l="ar">المساحة الكلية</span><span data-l="ku">کۆی ڕووبەر</span><span data-l="en">Total area</span></span><b id="r-total">—</b></div>
+          <div><span class="k"><span data-l="ar">دينار / م²</span><span data-l="ku">دینار / م²</span><span data-l="en">IQD per m²</span></span><b id="r-m2">—</b></div>
+          <div><span class="k"><span data-l="ar">المدة المتوقعة</span><span data-l="ku">ماوەی چاوەڕوانکراو</span><span data-l="en">Duration</span></span><b id="r-dur">—</b></div>
+        </div>
+        <div class="split" id="r-split" aria-hidden="true"></div>
+        <div class="legend" id="r-legend"></div>
+        <p class="disc"><span data-l="ar">تقدير أولي (±12%) مبني على متوسط أسعار السوق في العراق. للحصول على رقم دقيق نعدّ لك جدول كميات من مخططاتك.</span><span data-l="ku">خەمڵاندنی سەرەتایی (±12%) لەسەر بنەمای تێکڕای نرخی بازاڕ لە عێراق. بۆ ژمارەیەکی ورد، خشتەی بڕەکانت لە نەخشەکانتەوە بۆ ئامادە دەکەین.</span><span data-l="en">A first estimate (±12%) based on average Iraqi market rates. For an exact figure we prepare a BOQ from your drawings.</span></p>
+        <a class="btn yellow" id="r-cta" href="#contact"><span data-l="ar">اطلب جدول كميات دقيق</span><span data-l="ku">داوای خشتەی بڕی ورد بکە</span><span data-l="en">Get an exact BOQ</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= WHY ======================= -->
+<section class="sec">
+  <div class="wrap why">
+    <div class="quote">
+      <big>22</big>
+      <p><span data-l="ar">سنة في المواقع والمكاتب الإنشائية. أعرف أين تتأخر المشاريع وأين تضيع الأموال، وأبني الخطة على هذا الأساس.</span><span data-l="ku">ساڵ لە شوێنی کار و نووسینگە بیناسازییەکان. دەزانم پڕۆژەکان لە کوێ دوادەکەون و پارە لە کوێ بەفیڕۆ دەچێت، و پلانەکە لەسەر ئەو بنەمایە دادەنێم.</span><span data-l="en">years on sites and in project offices. I know where projects slip and where money leaks, and I plan around it.</span></p>
+      <div class="who"><b><span data-l="ar">أحمد مؤيد أحمد</span><span data-l="ku">ئەحمەد موئەیەد ئەحمەد</span><span data-l="en">Ahmed Muayad Ahmed</span></b><span data-l="ar">مؤسس Consultant Management · مدير مشاريع إنشائية</span><span data-l="ku">دامەزرێنەری Consultant Management · بەڕێوەبەری پڕۆژەی بیناسازی</span><span data-l="en">Founder, Consultant Management · Construction project manager</span></div>
+      <ul class="creds">
+        <li><span data-l="ar">مهندس مدني · جامعة الموصل 2004</span><span data-l="ku">ئەندازیاری شارستانی · زانکۆی موسڵ 2004</span><span data-l="en">Civil engineer · University of Mosul, 2004</span></li>
+        <li><span data-l="ar">عضو نقابة المهندسين في العراق وكردستان (استشاري)</span><span data-l="ku">ئەندامی سەندیکای ئەندازیاران لە عێراق و کوردستان (ڕاوێژکار)</span><span data-l="en">Iraq &amp; Kurdistan Engineers Union member (Consultant grade)</span></li>
+        <li><span data-l="ar">دبلوم الإدارة الاستراتيجية ودبلوم إدارة الابتكار (IBMI، برلين)</span><span data-l="ku">دیپلۆمی بەڕێوەبردنی ستراتیژی و دیپلۆمی بەڕێوەبردنی داهێنان (IBMI، بەرلین)</span><span data-l="en">Diplomas in Strategic Management and Innovation Management (IBMI, Berlin)</span></li>
+        <li><span data-l="ar">MS Project · Primavera P6 · AutoCAD · STAAD Pro · SAP2000</span><span data-l="ku">MS Project · Primavera P6 · AutoCAD · STAAD Pro · SAP2000</span><span data-l="en">MS Project · Primavera P6 · AutoCAD · STAAD Pro · SAP2000</span></li>
+      </ul>
+    </div>
+    <div>
+      <span class="eyebrow"><span data-l="ar">لماذا نحن</span><span data-l="ku">بۆچی ئێمە</span><span data-l="en">Why us</span></span>
+      <h2 style="font-size:clamp(26px,3.2vw,36px);font-weight:700;margin:6px 0 32px"><span data-l="ar">خبرة الموقع، بدقة المكتب</span><span data-l="ku">ئەزموونی شوێنی کار، بە وردیی نووسینگە</span><span data-l="en">Site experience, office precision</span></h2>
+      <div class="points">
+        <div class="pt"><h3><span data-l="ar">سعر ثابت وواضح</span><span data-l="ku">نرخی جێگیر و ڕوون</span><span data-l="en">Fixed, clear price</span></h3><p><span data-l="ar">عرض سعر مكتوب خلال 24 ساعة، بدون تكاليف مخفية.</span><span data-l="ku">نرخێکی نووسراو لە ماوەی 24 کاتژمێردا، بێ تێچووی شاراوە.</span><span data-l="en">A written quote within 24 hours, no hidden costs.</span></p></div>
+        <div class="pt"><h3><span data-l="ar">تسليم في الموعد</span><span data-l="ku">ڕادەستکردن لە کاتی خۆیدا</span><span data-l="en">Delivered on time</span></h3><p><span data-l="ar">نلتزم بالموعد المتفق عليه ونرسل تحديثاً كل يومين.</span><span data-l="ku">پابەندی کاتی ڕێککەوتوو دەبین و هەموو دوو ڕۆژ جارێک زانیاریی نوێت بۆ دەنێرین.</span><span data-l="en">We keep the agreed date and update you every two days.</span></p></div>
+        <div class="pt"><h3><span data-l="ar">ملفات تملكها</span><span data-l="ku">فایلەکان هی خۆتن</span><span data-l="en">Files you own</span></h3><p><span data-l="ar">كل الملفات قابلة للتعديل وتبقى لك بعد انتهاء العمل.</span><span data-l="ku">هەموو فایلەکان دەستکاری دەکرێن و دوای تەواوبوونی کار بۆ خۆت دەمێننەوە.</span><span data-l="en">Every file is editable and stays yours.</span></p></div>
+        <div class="pt"><h3><span data-l="ar">عربي، كردي، إنكليزي</span><span data-l="ku">عەرەبی، کوردی، ئینگلیزی</span><span data-l="en">Arabic, Kurdish, English</span></h3><p><span data-l="ar">نتواصل ونكتب التقارير بالعربية أو الكردية أو الإنكليزية حسب الجهة المستفيدة.</span><span data-l="ku">بە عەرەبی، کوردی یان ئینگلیزی قسە دەکەین و ڕاپۆرت دەنووسین، بەپێی داوای لایەنی سوودمەند.</span><span data-l="en">We talk and write reports in Arabic, Kurdish or English, as your client requires.</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROCESS ======================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">طريقة العمل</span><span data-l="ku">شێوازی کار</span><span data-l="en">How we work</span></span>
+        <h2><span data-l="ar">أربع خطوات بسيطة</span><span data-l="ku">چوار هەنگاوی سادە</span><span data-l="en">Four simple steps</span></h2>
+      </div>
+    </div>
+    <ol class="steps">
+      <li><div class="n"></div><h3><span data-l="ar">ترسل التفاصيل</span><span data-l="ku">وردەکارییەکان دەنێریت</span><span data-l="en">Send the details</span></h3><p><span data-l="ar">المخططات، الموقع، المساحة، والمطلوب.</span><span data-l="ku">نەخشەکان، شوێن، ڕووبەر و داواکارییەکان.</span><span data-l="en">Drawings, location, area and scope.</span></p></li>
+      <li><div class="n"></div><h3><span data-l="ar">عرض سعر خلال 24 ساعة</span><span data-l="ku">نرخ لە ماوەی 24 کاتژمێردا</span><span data-l="en">Quote in 24 hours</span></h3><p><span data-l="ar">سعر ثابت ومدة تسليم واضحة.</span><span data-l="ku">نرخی جێگیر و کاتی ڕادەستکردنی ڕوون.</span><span data-l="en">A fixed price and a clear date.</span></p></li>
+      <li><div class="n"></div><h3><span data-l="ar">التنفيذ مع التحديثات</span><span data-l="ku">جێبەجێکردن لەگەڵ زانیاریی نوێ</span><span data-l="en">Work with updates</span></h3><p><span data-l="ar">تحديث قصير كل يومين على واتساب.</span><span data-l="ku">کورتە زانیارییەک هەموو دوو ڕۆژ جارێک لە واتسئاپ.</span><span data-l="en">A short update every two days.</span></p></li>
+      <li><div class="n"></div><h3><span data-l="ar">التسليم والتعديلات</span><span data-l="ku">ڕادەستکردن و گۆڕانکاری</span><span data-l="en">Handover</span></h3><p><span data-l="ar">ملفات نهائية وتعديلان مجاناً.</span><span data-l="ku">فایلی کۆتایی و دوو گۆڕانکاریی بێبەرامبەر.</span><span data-l="en">Final files and two free revisions.</span></p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ======================= SAMPLES ======================= -->
+<section class="sec" id="work">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">نماذج من العمل</span><span data-l="ku">نموونەی کارەکان</span><span data-l="en">Sample work</span></span>
+        <h2><span data-l="ar">هكذا يبدو ما تستلمه</span><span data-l="ku">ئەوەی وەریدەگریت ئاوا دەردەکەوێت</span><span data-l="en">What you receive</span></h2>
+      </div>
+      <p><span data-l="ar">نماذج لمشاريع افتراضية توضّح شكل ومستوى التسليم. اطلبها على واتساب.</span><span data-l="ku">نموونەی پڕۆژەی گریمانەیی کە شێوە و ئاستی ڕادەستکردن نیشان دەدەن. لە واتسئاپ داوایان بکە.</span><span data-l="en">Samples based on hypothetical projects that show the format and quality. Ask for them on WhatsApp.</span></p>
+    </div>
+    <div class="samples">
+      <article class="sample">
+        <div class="pv" aria-hidden="true">
+          <div class="g-row"><i class="d" style="grid-column:1/span 3"></i></div>
+          <div class="g-row"><i class="d" style="grid-column:4/span 4"></i></div>
+          <div class="g-row"><i class="c" style="grid-column:8/span 6"></i></div>
+          <div class="g-row"><i style="grid-column:11/span 5"></i></div>
+          <div class="g-row"><i style="grid-column:13/span 4"></i></div>
+          <div class="g-row"><i style="grid-column:17/span 4"></i></div>
+        </div>
+        <div class="body">
+          <h3><span data-l="ar">جدول زمني لمبنى 4 طوابق</span><span data-l="ku">خشتەی کات بۆ بینایەکی 4 نهۆمی</span><span data-l="en">Schedule, 4-storey building</span></h3>
+          <p><span data-l="ar">10 فعاليات على 29 أسبوعاً مع المسار الحرج ونسب الإنجاز.</span><span data-l="ku">10 چالاکی لە 29 هەفتەدا لەگەڵ ڕێڕەوی هەستیار و ڕێژەی پێشکەوتن.</span><span data-l="en">10 activities over 29 weeks with critical path and progress.</span></p>
+          <span class="tag">Excel · PDF</span>
+        </div>
+      </article>
+      <article class="sample">
+        <div class="pv" aria-hidden="true">
+          <div class="boq">
+            <div><span>A · Earthworks</span><span>1,655,000</span></div>
+            <div><span>B · Concrete</span><span>37,230,000</span></div>
+            <div><span>C · Masonry</span><span>9,920,000</span></div>
+            <div><span>D · Finishes</span><span>25,970,000</span></div>
+            <div class="t"><span>TOTAL IQD</span><span>102,716,250</span></div>
+          </div>
+        </div>
+        <div class="body">
+          <h3><span data-l="ar">جدول كميات لدار 200 م²</span><span data-l="ku">خشتەی بڕ بۆ خانوویەکی 200 م²</span><span data-l="en">BOQ, 200 m² house</span></h3>
+          <p><span data-l="ar">22 بنداً في 6 أبواب مع الكلفة الكلية وكلفة المتر.</span><span data-l="ku">22 بڕگە لە 6 بەشدا لەگەڵ کۆی تێچوون و تێچووی هەر مەترێک.</span><span data-l="en">22 items in 6 sections with total and per-m² cost.</span></p>
+          <span class="tag">Excel · PDF</span>
+        </div>
+      </article>
+      <article class="sample">
+        <div class="pv" aria-hidden="true">
+          <div class="bars">
+            <span style="height:100%"><i style="height:100%"></i></span>
+            <span style="height:100%"><i style="height:100%"></i></span>
+            <span style="height:100%"><i style="height:96%;background:var(--accent)"></i></span>
+            <span style="height:70%"><i style="height:20%"></i></span>
+            <span style="height:55%"><i style="height:0"></i></span>
+          </div>
+        </div>
+        <div class="body">
+          <h3><span data-l="ar">تقرير إنجاز شهري</span><span data-l="ku">ڕاپۆرتی مانگانەی پێشکەوتن</span><span data-l="en">Monthly progress report</span></h3>
+          <p><span data-l="ar">الحالة، سير الفعاليات، المشاكل والإجراءات، وخطة الشهر القادم.</span><span data-l="ku">دۆخ، ڕەوتی چالاکییەکان، کێشە و ڕێکارەکان، و پلانی مانگی داهاتوو.</span><span data-l="en">Status, activity progress, issues and next month's plan.</span></p>
+          <span class="tag">PDF</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROJECTS ======================= -->
+<!-- Hidden until the PROJECTS list in the script below has at least one entry. -->
+<section class="sec" id="projects" hidden>
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">مشاريعنا</span><span data-l="ku">پڕۆژەکانمان</span><span data-l="en">Projects</span></span>
+        <h2><span data-l="ar">مشاريع شاركنا في إدارتها</span><span data-l="ku">ئەو پڕۆژانەی بەشدارییمان لە بەڕێوەبردنیاندا کردووە</span><span data-l="en">Projects we have helped deliver</span></h2>
+      </div>
+      <p><span data-l="ar">من خبرة 22 سنة في المواقع ومكاتب إدارة المشاريع في العراق.</span><span data-l="ku">لە 22 ساڵ ئەزموونی شوێنی کار و نووسینگەکانی بەڕێوەبردنی پڕۆژە لە عێراق.</span><span data-l="en">From 22 years on sites and in project offices across Iraq.</span></p>
+    </div>
+    <div class="projects" id="projList"></div>
+  </div>
+</section>
+
+<!-- ======================= PACKAGES ======================= -->
+<section class="sec" id="packages">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">باقات شهرية</span><span data-l="ku">پاکێجی مانگانە</span><span data-l="en">Monthly packages</span></span>
+        <h2><span data-l="ar">متابعة مستمرة لمشروعك</span><span data-l="ku">بەدواداچوونی بەردەوام بۆ پڕۆژەکەت</span><span data-l="en">Ongoing project control</span></h2>
+      </div>
+      <p><span data-l="ar">للمشاريع قيد التنفيذ. يمكنك تغيير الباقة أو إيقافها في أي شهر.</span><span data-l="ku">بۆ ئەو پڕۆژانەی لە جێبەجێکردندان. دەتوانیت لە هەر مانگێکدا پاکێجەکە بگۆڕیت یان ڕایبگریت.</span><span data-l="en">For projects under construction. Change or stop any month.</span></p>
+    </div>
+    <div class="packs">
+      <div class="pack">
+        <h3><span data-l="ar">الأساسية</span><span data-l="ku">بنەڕەتی</span><span data-l="en">Basic</span></h3>
+        <p class="for"><span data-l="ar">لبيت أو مبنى صغير</span><span data-l="ku">بۆ خانوو یان بینایەکی بچووک</span><span data-l="en">For a house or small building</span></p>
+        <div class="amt ltr">$90</div><span class="per"><span data-l="ar">شهرياً · يبدأ من</span><span data-l="ku">مانگانە · دەستپێک لە</span><span data-l="en">per month · from</span></span>
+        <ul>
+          <li><span data-l="ar">تقرير إنجاز شهري</span><span data-l="ku">ڕاپۆرتی مانگانەی پێشکەوتن</span><span data-l="en">Monthly progress report</span></li>
+          <li><span data-l="ar">تحديث الجدول الزمني شهرياً</span><span data-l="ku">نوێکردنەوەی مانگانەی خشتەی کات</span><span data-l="en">Monthly schedule update</span></li>
+          <li><span data-l="ar">زيارة موقع واحدة</span><span data-l="ku">یەک سەردانی شوێنی کار</span><span data-l="en">One site visit</span></li>
+        </ul>
+        <a class="btn" href="https://wa.me/9647876979292" target="_blank" rel="noopener"><span data-l="ar">اطلب الباقة</span><span data-l="ku">داوای پاکێج بکە</span><span data-l="en">Choose Basic</span></a>
+      </div>
+      <div class="pack main">
+        <span class="badge"><span data-l="ar">الأكثر طلباً</span><span data-l="ku">داواکراوترین</span><span data-l="en">Most popular</span></span>
+        <h3><span data-l="ar">المتابعة</span><span data-l="ku">بەدواداچوون</span><span data-l="en">Control</span></h3>
+        <p class="for"><span data-l="ar">لمبنى متعدد الطوابق أو مقاول بعدة مواقع</span><span data-l="ku">بۆ بینای چەند نهۆمی یان بەڵێندەرێک کە چەند شوێنی کاری هەیە</span><span data-l="en">For multi-storey buildings or contractors with several sites</span></p>
+        <div class="amt ltr">$200</div><span class="per"><span data-l="ar">شهرياً · يبدأ من</span><span data-l="ku">مانگانە · دەستپێک لە</span><span data-l="en">per month · from</span></span>
+        <ul>
+          <li><span data-l="ar">تقارير أسبوعية وشهرية</span><span data-l="ku">ڕاپۆرتی هەفتانە و مانگانە</span><span data-l="en">Weekly and monthly reports</span></li>
+          <li><span data-l="ar">تحديث الجدول كل أسبوعين</span><span data-l="ku">نوێکردنەوەی خشتە هەموو دوو هەفتە جارێک</span><span data-l="en">Schedule update every two weeks</span></li>
+          <li><span data-l="ar">متابعة الكلفة مقابل الميزانية</span><span data-l="ku">بەدواداچوونی تێچوون بەرامبەر بە بودجە</span><span data-l="en">Cost versus budget tracking</span></li>
+          <li><span data-l="ar">زيارتا موقع (في أي محافظة)</span><span data-l="ku">دوو سەردانی شوێنی کار (لە هەر پارێزگایەک)</span><span data-l="en">Two site visits</span></li>
+        </ul>
+        <a class="btn" href="https://wa.me/9647876979292" target="_blank" rel="noopener"><span data-l="ar">اطلب الباقة</span><span data-l="ku">داوای پاکێج بکە</span><span data-l="en">Choose Control</span></a>
+      </div>
+      <div class="pack">
+        <h3><span data-l="ar">الإدارة الكاملة</span><span data-l="ku">بەڕێوەبردنی تەواو</span><span data-l="en">Full management</span></h3>
+        <p class="for"><span data-l="ar">لمشاريع تحتاج مكتب إدارة مشروع</span><span data-l="ku">بۆ ئەو پڕۆژانەی پێویستیان بە نووسینگەی بەڕێوەبردنی پڕۆژە هەیە</span><span data-l="en">For projects that need a PM office</span></p>
+        <div class="amt ltr">$400</div><span class="per"><span data-l="ar">شهرياً · يبدأ من</span><span data-l="ku">مانگانە · دەستپێک لە</span><span data-l="en">per month · from</span></span>
+        <ul>
+          <li><span data-l="ar">كل ما في باقة المتابعة</span><span data-l="ku">هەموو ئەوەی لە پاکێجی بەدواداچووندا هەیە</span><span data-l="en">Everything in Control</span></li>
+          <li><span data-l="ar">محاضر اجتماعات الموقع</span><span data-l="ku">کۆنووسی کۆبوونەوەکانی شوێنی کار</span><span data-l="en">Site meeting minutes</span></li>
+          <li><span data-l="ar">مراجعة مستخلصات المقاولين</span><span data-l="ku">پێداچوونەوەی مستەخلەسەکانی بەڵێندەران</span><span data-l="en">Contractor payment review</span></li>
+          <li><span data-l="ar">أربع زيارات موقع</span><span data-l="ku">چوار سەردانی شوێنی کار</span><span data-l="en">Four site visits</span></li>
+        </ul>
+        <a class="btn" href="https://wa.me/9647876979292" target="_blank" rel="noopener"><span data-l="ar">اطلب الباقة</span><span data-l="ku">داوای پاکێج بکە</span><span data-l="en">Choose Full</span></a>
+      </div>
+    </div>
+    <p class="note"><span data-l="ar">السعر النهائي حسب حجم المشروع. للعملاء في العراق يمكن الدفع بالدينار عبر كي كارد أو نقداً.</span><span data-l="ku">نرخی کۆتایی بەپێی قەبارەی پڕۆژەکەیە. کڕیارانی ناو عێراق دەتوانن بە دینار لە ڕێگەی کی کارد یان بە نەختینە پارە بدەن.</span><span data-l="en">Final price depends on project size. Clients in Iraq can pay in dinars via Qi Card or in cash.</span></p>
+  </div>
+</section>
+
+<!-- ======================= COVERAGE ======================= -->
+<section class="sec" id="coverage">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">مناطق العمل</span><span data-l="ku">ناوچەکانی کار</span><span data-l="en">Coverage</span></span>
+        <h2><span data-l="ar">نعمل في كل محافظات العراق</span><span data-l="ku">لە هەموو پارێزگاکانی عێراق کار دەکەین</span><span data-l="en">We work across all of Iraq</span></h2>
+      </div>
+      <p><span data-l="ar">الأعمال المكتبية عن بُعد لأي محافظة. زيارات الموقع متاحة في كل المحافظات وتُضاف لها كلفة السفر خارج بغداد.</span><span data-l="ku">کاری نووسینگەیی لە دوورەوە بۆ هەر پارێزگایەک دەکرێت. سەردانی شوێنی کار لە هەموو پارێزگاکان بەردەستە و لە دەرەوەی بەغدا تێچووی گەشت زیاد دەکرێت.</span><span data-l="en">Office work is done remotely for any governorate. Site visits are available everywhere, with travel costs added outside Baghdad.</span></p>
+    </div>
+    <div class="gov">
+      <span class="hq"><span data-l="ar">بغداد</span><span data-l="ku">بەغدا</span><span data-l="en">Baghdad</span><small><span data-l="ar">المقر</span><span data-l="ku">بارەگا</span><span data-l="en">HQ</span></small></span>
+      <span><span data-l="ar">البصرة</span><span data-l="ku">بەسرە</span><span data-l="en">Basra</span></span>
+      <span><span data-l="ar">نينوى</span><span data-l="ku">نەینەوا</span><span data-l="en">Nineveh</span></span>
+      <span><span data-l="ar">أربيل</span><span data-l="ku">هەولێر</span><span data-l="en">Erbil</span></span>
+      <span><span data-l="ar">السليمانية</span><span data-l="ku">سلێمانی</span><span data-l="en">Sulaymaniyah</span></span>
+      <span><span data-l="ar">دهوك</span><span data-l="ku">دهۆک</span><span data-l="en">Duhok</span></span>
+      <span><span data-l="ar">كركوك</span><span data-l="ku">کەرکووک</span><span data-l="en">Kirkuk</span></span>
+      <span><span data-l="ar">الأنبار</span><span data-l="ku">ئەنبار</span><span data-l="en">Anbar</span></span>
+      <span><span data-l="ar">صلاح الدين</span><span data-l="ku">سەڵاحەدین</span><span data-l="en">Saladin</span></span>
+      <span><span data-l="ar">ديالى</span><span data-l="ku">دیالە</span><span data-l="en">Diyala</span></span>
+      <span><span data-l="ar">بابل</span><span data-l="ku">بابل</span><span data-l="en">Babil</span></span>
+      <span><span data-l="ar">كربلاء</span><span data-l="ku">کەربەلا</span><span data-l="en">Karbala</span></span>
+      <span><span data-l="ar">النجف</span><span data-l="ku">نەجەف</span><span data-l="en">Najaf</span></span>
+      <span><span data-l="ar">واسط</span><span data-l="ku">واسیت</span><span data-l="en">Wasit</span></span>
+      <span><span data-l="ar">القادسية</span><span data-l="ku">قادسیە</span><span data-l="en">Qadisiyah</span></span>
+      <span><span data-l="ar">ميسان</span><span data-l="ku">میسان</span><span data-l="en">Maysan</span></span>
+      <span><span data-l="ar">ذي قار</span><span data-l="ku">زیقار</span><span data-l="en">Dhi Qar</span></span>
+      <span><span data-l="ar">المثنى</span><span data-l="ku">موسەننا</span><span data-l="en">Muthanna</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">الأسئلة الشائعة</span><span data-l="ku">پرسیارە باوەکان</span><span data-l="en">FAQ</span></span>
+        <h2><span data-l="ar">أسئلة يسألها عملاؤنا</span><span data-l="ku">ئەو پرسیارانەی کڕیارەکانمان دەیکەن</span><span data-l="en">Questions clients ask</span></h2>
+      </div>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary><span data-l="ar">هل تعملون خارج بغداد؟</span><span data-l="ku">ئایا لە دەرەوەی بەغدا کار دەکەن؟</span><span data-l="en">Do you work outside Baghdad?</span></summary>
+        <p><span data-l="ar">نعم، في جميع محافظات العراق الـ18. الجداول والكميات والتقارير تُنجز عن بُعد، وزيارات الموقع متاحة في كل المحافظات مع إضافة كلفة السفر.</span><span data-l="ku">بەڵێ، لە هەر 18 پارێزگاکەی عێراق. خشتەی کات، بڕەکان و ڕاپۆرتەکان لە دوورەوە ئەنجام دەدرێن، و سەردانی شوێنی کار لە هەموو پارێزگاکان بەردەستە لەگەڵ زیادکردنی تێچووی گەشت.</span><span data-l="en">Yes, in all 18 governorates. Schedules, BOQs and reports are done remotely, and site visits are available everywhere with travel costs added.</span></p>
+      </details>
+      <details>
+        <summary><span data-l="ar">كيف يتم الدفع؟</span><span data-l="ku">پارەدان چۆن دەبێت؟</span><span data-l="en">How do I pay?</span></summary>
+        <p><span data-l="ar">50% عند بدء العمل و50% عند التسليم، بالدينار عبر كي كارد أو نقداً.</span><span data-l="ku">50% لە سەرەتای کار و 50% لە کاتی ڕادەستکردن، بە دینار لە ڕێگەی کی کارد یان بە نەختینە.</span><span data-l="en">50% at the start and 50% on delivery, in dinars via Qi Card or in cash.</span></p>
+      </details>
+      <details>
+        <summary><span data-l="ar">هل السعر ثابت؟</span><span data-l="ku">ئایا نرخەکە جێگیرە؟</span><span data-l="en">Is the price fixed?</span></summary>
+        <p><span data-l="ar">الأسعار في الموقع أسعار بداية. بعد مراجعة مخططاتك نرسل خلال 24 ساعة عرض سعر مكتوباً وثابتاً لا يتغير أثناء العمل.</span><span data-l="ku">نرخەکانی ئەم ماڵپەڕە نرخی سەرەتاین. دوای پێداچوونەوەی نەخشەکانت، لە ماوەی 24 کاتژمێردا نرخێکی نووسراو و جێگیرت بۆ دەنێرین کە لە کاتی کارەکەدا ناگۆڕێت.</span><span data-l="en">Prices on this site are starting prices. After reviewing your drawings we send a fixed written quote within 24 hours.</span></p>
+      </details>
+      <details>
+        <summary><span data-l="ar">ما البرامج التي تستخدمونها؟</span><span data-l="ku">چ بەرنامەیەک بەکاردەهێنن؟</span><span data-l="en">Which software do you use?</span></summary>
+        <p><span data-l="ar">MS Project وPrimavera P6 وExcel وAutoCAD. تستلم الملفات بالصيغة التي تفضّلها أو التي تطلبها الجهة المستفيدة.</span><span data-l="ku">MS Project، Primavera P6، Excel و AutoCAD. فایلەکان بەو شێوازە وەردەگریت کە خۆت پێت باشە یان لایەنی سوودمەند داوای دەکات.</span><span data-l="en">MS Project, Primavera P6, Excel and AutoCAD. You receive files in the format you or your client require.</span></p>
+      </details>
+      <details>
+        <summary><span data-l="ar">هل تساعدون في المناقصات الحكومية؟</span><span data-l="ku">ئایا لە تێندەرە حکومییەکاندا یارمەتی دەدەن؟</span><span data-l="en">Do you help with government tenders?</span></summary>
+        <p><span data-l="ar">نعم، نجهّز للمقاولين جداول الكميات والجدول الزمني والوثائق الفنية المطلوبة في ملف العطاء.</span><span data-l="ku">بەڵێ، خشتەی بڕەکان، خشتەی کات و بەڵگەنامە تەکنیکییە پێویستەکانی فایلی تێندەر بۆ بەڵێندەران ئامادە دەکەین.</span><span data-l="en">Yes. We prepare the BOQ, schedule and technical documents contractors need for their bid.</span></p>
+      </details>
+      <details>
+        <summary><span data-l="ar">ما دقة حاسبة الكلفة؟</span><span data-l="ku">ژمێرەری تێچوون چەند وردە؟</span><span data-l="en">How accurate is the cost estimator?</span></summary>
+        <p><span data-l="ar">هي تقدير أولي بنسبة ±12% مبني على متوسط الأسعار. الكلفة الحقيقية تعتمد على التصميم والموقع وأسعار المواد وقت التنفيذ، لذلك ننصح بجدول كميات مفصّل قبل التعاقد.</span><span data-l="ku">خەمڵاندنێکی سەرەتاییە بە ڕێژەی ±12% لەسەر بنەمای تێکڕای نرخەکان. تێچووی ڕاستەقینە پشت بە دیزاین، شوێن و نرخی کەرەستە لە کاتی جێبەجێکردندا دەبەستێت، بۆیە پێش گرێبەست ئامۆژگاریت دەکەین خشتەی بڕی ورد ئامادە بکەیت.</span><span data-l="en">It is a first estimate (±12%) from average rates. Real cost depends on design, location and material prices, so get a detailed BOQ before signing a contract.</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CTA BAND ======================= -->
+<div class="band">
+  <div class="wrap">
+    <div>
+      <h2><span data-l="ar">عندك مشروع؟ احصل على عرض سعر خلال 24 ساعة</span><span data-l="ku">پڕۆژەت هەیە؟ لە ماوەی 24 کاتژمێردا نرخ وەربگرە</span><span data-l="en">Have a project? Get a quote within 24 hours</span></h2>
+      <p><span data-l="ar">أرسل المخططات على واتساب وسنرد عليك بخطة وسعر.</span><span data-l="ku">نەخشەکان لە واتسئاپ بنێرە و بە پلان و نرخەوە وەڵامت دەدەینەوە.</span><span data-l="en">Send your drawings on WhatsApp and we'll reply with a plan and price.</span></p>
+    </div>
+    <a class="btn dark" href="https://wa.me/9647876979292" target="_blank" rel="noopener"><span data-l="ar">راسلنا على واتساب</span><span data-l="ku">لە واتسئاپ نامەمان بۆ بنێرە</span><span data-l="en">Message us on WhatsApp</span></a>
+  </div>
+</div>
+
+<!-- ======================= CONTACT ======================= -->
+<section class="sec" id="contact">
+  <div class="wrap contact">
+    <div>
+      <span class="eyebrow"><span data-l="ar">تواصل معنا</span><span data-l="ku">پەیوەندیمان پێوە بکە</span><span data-l="en">Contact</span></span>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);font-weight:700;margin-top:6px"><span data-l="ar">اطلب عرض سعر</span><span data-l="ku">داوای نرخ بکە</span><span data-l="en">Request a quote</span></h2>
+      <p style="color:var(--muted);margin-top:10px"><span data-l="ar">املأ النموذج وسيُفتح واتساب برسالة جاهزة فيها كل التفاصيل. نرد خلال 24 ساعة.</span><span data-l="ku">فۆڕمەکە پڕبکەرەوە و واتسئاپ بە نامەیەکی ئامادە کە هەموو وردەکارییەکانی تێدایە دەکرێتەوە. لە ماوەی 24 کاتژمێردا وەڵام دەدەینەوە.</span><span data-l="en">Fill in the form and WhatsApp opens with a ready message. We reply within 24 hours.</span></p>
+      <form class="qform" id="qForm" novalidate>
+        <div class="row2">
+          <div class="field"><label for="q-name"><span data-l="ar">الاسم</span><span data-l="ku">ناو</span><span data-l="en">Name</span> <span class="req">*</span></label><input id="q-name" type="text" autocomplete="name"></div>
+          <div class="field"><label for="q-phone"><span data-l="ar">رقم الهاتف</span><span data-l="ku">ژمارەی تەلەفۆن</span><span data-l="en">Phone</span> <span class="req">*</span></label><input id="q-phone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="q-gov"><span data-l="ar">المحافظة</span><span data-l="ku">پارێزگا</span><span data-l="en">Governorate</span> <span class="req">*</span></label><select id="q-gov"></select></div>
+          <div class="field"><label for="q-type"><span data-l="ar">نوع المشروع</span><span data-l="ku">جۆری پڕۆژە</span><span data-l="en">Project type</span></label><select id="q-type"></select></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="q-svc"><span data-l="ar">الخدمة المطلوبة</span><span data-l="ku">خزمەتگوزاریی داواکراو</span><span data-l="en">Service needed</span> <span class="req">*</span></label><select id="q-svc"></select></div>
+          <div class="field"><label for="q-area"><span data-l="ar">المساحة / الطوابق</span><span data-l="ku">ڕووبەر / نهۆمەکان</span><span data-l="en">Area / floors</span></label><input id="q-area" type="text"></div>
+        </div>
+        <div class="field"><label for="q-msg"><span data-l="ar">تفاصيل إضافية</span><span data-l="ku">وردەکاریی زیاتر</span><span data-l="en">More details</span></label><textarea id="q-msg"></textarea><small><span data-l="ar">مثلاً: مرحلة المشروع، الموعد المطلوب، هل المخططات جاهزة.</span><span data-l="ku">بۆ نموونە: قۆناغی پڕۆژە، کاتی داواکراو، ئایا نەخشەکان ئامادەن.</span><span data-l="en">For example: project stage, deadline, whether drawings are ready.</span></small></div>
+        <p class="err" id="q-err" role="alert"></p>
+        <div class="actions">
+          <a class="btn yellow" id="q-send" href="https://wa.me/9647876979292" target="_blank" rel="noopener"><span data-l="ar">إرسال الطلب على واتساب</span><span data-l="ku">ناردنی داواکاری لە واتسئاپ</span><span data-l="en">Send request on WhatsApp</span></a>
+          <button class="btn line" id="q-copy" type="button"><span data-l="ar">نسخ الطلب</span><span data-l="ku">کۆپیکردنی داواکاری</span><span data-l="en">Copy request</span></button>
+        </div>
+        <div class="ok" id="q-ok" hidden><span data-l="ar">تم فتح واتساب برسالتك. اضغط «إرسال» داخل واتساب حتى يصلنا طلبك.</span><span data-l="ku">واتسئاپ بە نامەکەتەوە کرایەوە. لە ناو واتسئاپ «ناردن» دابگرە بۆ ئەوەی داواکارییەکەت بگاتە ئێمە.</span><span data-l="en">WhatsApp opened with your message. Tap Send inside WhatsApp so we receive it.</span></div>
+        <pre class="preview" id="q-preview" hidden></pre>
+      </form>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
+        <div class="txt"><div class="k"><span data-l="ar">واتساب / هاتف</span><span data-l="ku">واتسئاپ / تەلەفۆن</span><span data-l="en">WhatsApp / phone</span></div><div class="v" id="c-phone">+964 787 697 9292</div></div>
+        <button class="copy" type="button" data-copy="c-phone"><span data-l="ar">نسخ</span><span data-l="ku">کۆپی</span><span data-l="en">Copy</span></button>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+        <div class="txt"><div class="k"><span data-l="ar">البريد الإلكتروني</span><span data-l="ku">ئیمەیڵ</span><span data-l="en">Email</span></div><div class="v" id="c-mail">ahmedsaman2017@gmail.com</div></div>
+        <button class="copy" type="button" data-copy="c-mail"><span data-l="ar">نسخ</span><span data-l="ku">کۆپی</span><span data-l="en">Copy</span></button>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <div class="txt"><div class="k"><span data-l="ar">العنوان</span><span data-l="ku">ناونیشان</span><span data-l="en">Location</span></div><div class="v" style="font-family:var(--ar)"><span data-l="ar">جميع محافظات العراق</span><span data-l="ku">هەموو پارێزگاکانی عێراق</span><span data-l="en">All Iraqi governorates</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="fab" href="https://wa.me/9647876979292" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3Z"/></svg>
+</a>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><defs> <radialGradient id="cmTile" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#353c43"/><stop offset="1" stop-color="#15181b"/></radialGradient> <linearGradient id="cmAmber" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd24d"/><stop offset=".55" stop-color="#e2a300"/><stop offset="1" stop-color="#a87400"/></linearGradient> <linearGradient id="cmAmberDeep" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b98100"/><stop offset="1" stop-color="#6e4b00"/></linearGradient> <linearGradient id="cmSteel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#dfe3e6"/><stop offset="1" stop-color="#aab1b7"/></linearGradient> <radialGradient id="cmSphere" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#d9dde0"/><stop offset="1" stop-color="#7d868e"/></radialGradient> <radialGradient id="cmSphereA" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#fff1b8"/><stop offset=".45" stop-color="#ffc21a"/><stop offset="1" stop-color="#a87400"/></radialGradient> <filter id="cmDrop" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0.8" dy="1.4" stdDeviation="1" flood-color="#000" flood-opacity=".55"/></filter> <filter id="cmGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.2"/></filter> </defs> <rect width="64" height="64" rx="13" fill="url(#cmTile)"/> <rect x=".6" y=".6" width="62.8" height="62.8" rx="12.4" fill="none" stroke="#fff" stroke-opacity=".08" stroke-width="1.2"/> <path d="M34.7 24 A14 14 0 1 0 23 47.4" fill="none" stroke="url(#cmAmberDeep)" stroke-width="6" stroke-linecap="round" transform="translate(1.2 1.6)"/> <path d="M34.7 24 A14 14 0 1 0 34.7 43" fill="none" stroke="#2a3036" stroke-width="5.5" stroke-linecap="round"/> <path d="M34.7 24 A14 14 0 1 0 23 47.4" fill="none" stroke="url(#cmAmber)" stroke-width="6" stroke-linecap="round" filter="url(#cmDrop)"/> <path d="M27 20 A12 12 0 0 0 13 31" fill="none" stroke="#fff6d6" stroke-width="1.3" stroke-linecap="round" opacity=".75"/> <polyline points="39,45 39,22 47.5,34 56,22 56,45" fill="none" stroke="#4b535a" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round" transform="translate(.9 1.2)"/> <polyline points="39,45 39,22 47.5,34 56,22 56,45" fill="none" stroke="url(#cmSteel)" stroke-width="3.6" stroke-linejoin="round" stroke-linecap="round"/> <g filter="url(#cmDrop)" fill="url(#cmSphere)"><circle cx="39" cy="45" r="3"/><circle cx="39" cy="22" r="3"/><circle cx="56" cy="22" r="3"/><circle cx="56" cy="45" r="3"/></g> <circle cx="47.5" cy="34" r="5.5" fill="#ffb800" opacity=".55" filter="url(#cmGlow)"/> <circle cx="47.5" cy="34" r="3.9" fill="url(#cmSphereA)"/></svg>
+      <span><b>CONSULTANT MANAGEMENT</b></span>
+    </a>
+    <span><span data-l="ar">© 2026 · أحمد مؤيد أحمد · العراق</span><span data-l="ku">© 2026 · ئەحمەد موئەیەد ئەحمەد · عێراق</span><span data-l="en">© 2026 · Ahmed Muayad Ahmed · Iraq</span></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, langBtns=document.querySelectorAll('.lang[data-set]');
+  function set(l){
+    if(l!=='ar'&&l!=='en'&&l!=='ckb')l='ar';
+    root.lang=l; root.dir=l==='en'?'ltr':'rtl';
+    langBtns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l?'true':'false')});
+    try{localStorage.setItem('cm-lang',l)}catch(e){}
+    refresh();
+  }
+  var saved='ar'; try{saved=localStorage.getItem('cm-lang')||'ar'}catch(e){}
+  langBtns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.set)})});
+  /* T(arabic, english, kurdish): pick the string for the current language */
+  function T(a,e,k){return root.lang==='en'?e:root.lang==='ckb'?(k||a):a}
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.dataset.copy), t=el.textContent.trim();
+      var done=function(){var o=b.innerHTML;b.textContent=T('تم النسخ','Copied','کۆپی کرا');setTimeout(function(){b.innerHTML=o},1400)};
+      var sel=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)};
+      if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,sel)}else{sel()}
+    });
+  });
+
+  /* ---------- data ---------- */
+  var WA='9647876979292', RATE=1310;
+  /* lists: [key, arabic, english, kurdish] */
+  var GOV=[['baghdad','بغداد','Baghdad','بەغدا'],['basra','البصرة','Basra','بەسرە'],['nineveh','نينوى','Nineveh','نەینەوا'],['erbil','أربيل','Erbil','هەولێر'],['sulaymaniyah','السليمانية','Sulaymaniyah','سلێمانی'],['duhok','دهوك','Duhok','دهۆک'],['kirkuk','كركوك','Kirkuk','کەرکووک'],['anbar','الأنبار','Anbar','ئەنبار'],['saladin','صلاح الدين','Saladin','سەڵاحەدین'],['diyala','ديالى','Diyala','دیالە'],['babil','بابل','Babil','بابل'],['karbala','كربلاء','Karbala','کەربەلا'],['najaf','النجف','Najaf','نەجەف'],['wasit','واسط','Wasit','واسیت'],['qadisiyah','القادسية','Qadisiyah','قادسیە'],['maysan','ميسان','Maysan','میسان'],['dhiqar','ذي قار','Dhi Qar','زیقار'],['muthanna','المثنى','Muthanna','موسەننا']];
+  var TYPES=[['house','دار سكنية','House','خانووی نیشتەجێبوون'],['building','عمارة سكنية','Residential building','باڵەخانەی نیشتەجێبوون'],['commercial','مبنى تجاري','Commercial building','بینای بازرگانی'],['public','مدرسة / مبنى حكومي','School / public building','قوتابخانە / بینای حکومی'],['infra','طرق وبنى تحتية','Roads & infrastructure','ڕێگا و ژێرخان'],['other','أخرى','Other','هیتر']];
+  var SVCS=[['schedule','الجدول الزمني','Project schedule','خشتەی کات'],['boq','جداول الكميات والكلفة','BOQ & cost estimate','خشتەی بڕ و تێچوون'],['report','تقارير الإنجاز','Progress reports','ڕاپۆرتی پێشکەوتن'],['tender','وثائق المناقصات','Tender documents','بەڵگەنامەکانی تێندەر'],['site','متابعة الموقع','Site coordination','بەدواداچوونی شوێنی کار'],['setup','نظام إدارة للشركة','Company PM setup','سیستەمی بەڕێوەبردن بۆ کۆمپانیا'],['pack','باقة شهرية','Monthly package','پاکێجی مانگانە']];
+  var FIN={eco:380000,std:500000,pre:680000}, TYPEF={house:1,building:1.08,commercial:1.15};
+  var SPLIT=[['الحفريات','Earthworks',2,'#8e949a','هەڵکەندن'],['الخرسانة والحديد','Concrete & steel',38,'#e2a300','کۆنکرێت و ئاسن'],['البناء','Masonry',10,'#f5d27a','دیوارسازی'],['الإنهاءات','Finishes',27,'#f1efe9','تەواوکاری'],['الأبواب والشبابيك','Doors & windows',7,'#5f656b','دەرگا و پەنجەرە'],['الكهرباء والصحيات','MEP services',16,'#c7cbcf','کارەبا و ئاو']];
+
+  /* ---------- your real projects ----------
+     Add one entry per project; the "Projects" section appears as soon as this list is not empty.
+     Put the photo in the same folder as index.html (e.g. projects/school-hilla.jpg) or leave img empty.
+     {img:'projects/school-hilla.jpg', year:'2019',
+      title:['مدرسة 18 صف','18-classroom school','قوتابخانەی 18 پۆل'],
+      place:['بابل · الحلة','Babil · Hilla','بابل · حیللە'],
+      role:['مدير المشروع','Project manager','بەڕێوەبەری پڕۆژە']} */
+  var PROJECTS=[
+    {year:'2025–2026',title:['دار ضيافة الأمانة العامة لمجلس الوزراء','Guest House, General Secretariat of the Council of Ministers','میوانخانەی ئەمیندارێتی گشتیی ئەنجومەنی وەزیران'],place:['بغداد','Baghdad','بەغدا'],role:['إدارة المشروع والجدول الزمني والكلفة','Project management, schedule and cost control','بەڕێوەبردنی پڕۆژە، خشتەی کات و تێچوون']},
+    {year:'2023–2025',title:['مدينة شط العرب السكنية · 1,654 فيلا','Shat Al-Arab City · 1,654 villas','شاری شەتولعەرەب · 1,654 ڤێلا'],place:['البصرة','Basra','بەسرە'],role:['مدير الموقع','Site manager','بەڕێوەبەری شوێنی کار']},
+    {year:'2022–2023',title:['مدينة الحوراء السكنية · 16,000 وحدة','Hawra City · 16,000 homes','شاری حەورا · 16,000 یەکە'],place:['بغداد · الدورة','Baghdad · Dora','بەغدا · دۆرە'],role:['مدير الموقع','Site manager','بەڕێوەبەری شوێنی کار']},
+    {year:'2021–2022',title:['مصفى أسفلت الفلوجة · 2,000 طن/يوم','Fallujah asphalt refinery · 2,000 t/day','پاڵاوگەی قیری فەللووجە · 2,000 تەن/ڕۆژ'],place:['الأنبار · الفلوجة','Anbar · Fallujah','ئەنبار · فەللووجە'],role:['مهندس مدني استشاري','Consulting civil engineer','ئەندازیاری شارستانیی ڕاوێژکار']},
+    {year:'2019–2020',title:['مول الكاظمية','Al-Kadhimiya Mall','مۆڵی کازمییە'],place:['بغداد','Baghdad','بەغدا'],role:['مهندس مدني استشاري','Consulting civil engineer','ئەندازیاری شارستانیی ڕاوێژکار']},
+    {year:'2018–2019',title:['معمل إسمنت الهلال (تسليم مفتاح)','Alhalal cement plant (turnkey)','کارگەی چیمەنتۆی هیلال (کلیل بەدەست)'],place:['المثنى','Muthanna','موسەننا'],role:['مدير المشروع','Project manager','بەڕێوەبەری پڕۆژە']},
+    {year:'2015–2017',title:['معمل إسمنت سامان · 5,300 طن كلنكر/يوم','Saman cement plant · 5,300 t clinker/day','کارگەی چیمەنتۆی سامان · 5,300 تەن کلینکەر/ڕۆژ'],place:['المثنى','Muthanna','موسەننا'],role:['إدارة المشروع','Project management','بەڕێوەبردنی پڕۆژە']},
+    {year:'2014–2015',title:['محطة بازيان 400 ك.ف GIS','Bazyan 400 kV GIS substation','وێستگەی بازیان 400 ک.ڤ GIS'],place:['السليمانية','Sulaymaniyah','سلێمانی'],role:['مدير الموقع (تسليم مفتاح)','Site manager (turnkey)','بەڕێوەبەری شوێنی کار (کلیل بەدەست)']},
+    {year:'2012–2014',title:['معمل إسمنت GRD · سايلوات وأسس خوازيق','GRD cement plant · silos and piling','کارگەی چیمەنتۆی GRD · سایلۆ و بناغەی ستوونی'],place:['السليمانية · بازيان','Sulaymaniyah · Bazyan','سلێمانی · بازیان'],role:['مهندس إشراف','Supervising engineer','ئەندازیاری سەرپەرشتیار']}
+  ];
+
+  function $(id){return document.getElementById(id)}
+  function isAr(){return root.lang==='ar'}
+  function fmt(n){return Math.round(n).toLocaleString('en-US')}
+  function text(it){return T(it[1],it[2],it[3])}
+  function label(list,v){for(var i=0;i<list.length;i++){if(list[i][0]===v)return text(list[i])}return ''}
+  function opts(sel,list,ph){
+    var v=sel.value; sel.innerHTML='';
+    if(ph)sel.add(new Option(ph,''));
+    list.forEach(function(it){sel.add(new Option(text(it),it[0]))});
+    if(v)sel.value=v;
+  }
+  function months(n){return T(n+(n>=3&&n<=10?' أشهر':' شهراً'),n+' months',n+' مانگ')}
+  function projects(){
+    var box=$('projList'); $('projects').hidden=!PROJECTS.length; box.innerHTML='';
+    PROJECTS.forEach(function(p){
+      var pick=function(a){return a?T(a[0],a[1],a[2]):''};
+      var fig=document.createElement('figure'); fig.className='proj'+(p.img?'':' noimg');
+      if(p.img){var ph=document.createElement('img');ph.className='ph';ph.src=p.img;ph.alt=pick(p.title);ph.loading='lazy';fig.appendChild(ph)}
+      var cap=document.createElement('figcaption'), h=document.createElement('h3'), w=document.createElement('div');
+      h.textContent=pick(p.title); w.className='where';
+      [pick(p.place),p.year||''].forEach(function(s){if(s){var e=document.createElement('span');e.textContent=s;w.appendChild(e)}});
+      cap.appendChild(h); cap.appendChild(w);
+      if(p.role){var r=document.createElement('p');r.textContent=pick(p.role);cap.appendChild(r)}
+      fig.appendChild(cap); box.appendChild(fig);
+    });
+  }
+
+  /* ---------- estimator ---------- */
+  function estimate(){
+    var t=$('e-type').value||'house';
+    var a=Math.max(0,+$('e-area').value||0);
+    var f=Math.max(1,Math.min(40,Math.round(+$('e-floors').value||1)));
+    var finEl=document.querySelector('input[name="e-fin"]:checked'), fin=finEl?finEl.value:'std';
+    var total=a*f, m2=FIN[fin]*TYPEF[t], cost=total*m2;
+    $('r-iqd').textContent=fmt(cost)+' IQD';
+    var rg=$('r-range'), nums=document.createElement('bdi');
+    nums.textContent=fmt(cost*.88)+' – '+fmt(cost*1.12)+' IQD';
+    rg.textContent=T('النطاق المتوقع: ','Expected range: ','مەودای چاوەڕوانکراو: '); rg.appendChild(nums);
+    $('r-usd').textContent='$'+fmt(cost/RATE);
+    $('r-total').textContent=fmt(total)+' m²';
+    $('r-m2').textContent=fmt(m2);
+    $('r-dur').textContent=total?months(Math.round(3+f*1.6+total/500)):'—';
+    $('r-split').innerHTML=SPLIT.map(function(s){return '<i style="width:'+s[2]+'%;background:'+s[3]+'"></i>'}).join('');
+    $('r-legend').innerHTML=SPLIT.map(function(s){return '<span style="--c:'+s[3]+'"><em>'+T(s[0],s[1],s[4])+'</em><b>'+fmt(cost*s[2]/100)+'</b></span>'}).join('');
+  }
+  $('estForm').addEventListener('input',estimate);
+  $('estForm').addEventListener('change',estimate);
+  $('estForm').addEventListener('submit',function(e){e.preventDefault()});
+  $('r-cta').addEventListener('click',function(){
+    var t=$('e-type').value; $('q-type').value=t; $('q-svc').value='boq';
+    $('q-area').value=fmt(+$('e-area').value||0)+' m² × '+(+$('e-floors').value||1)+T(' طوابق',' floors',' نهۆم');
+    sync();
+  });
+
+  /* ---------- quote form ---------- */
+  function v(id){return $(id).value.trim()}
+  function msg(){
+    var lines=[T('السلام عليكم، أرغب بطلب عرض سعر من Consultant Management:','Hello, I would like a quote from Consultant Management:','سڵاو، دەمەوێت نرخ لە Consultant Management وەربگرم:'),'',
+      T('الاسم: ','Name: ','ناو: ')+v('q-name'),
+      T('الهاتف: ','Phone: ','تەلەفۆن: ')+v('q-phone'),
+      T('المحافظة: ','Governorate: ','پارێزگا: ')+label(GOV,v('q-gov')),
+      T('الخدمة: ','Service: ','خزمەتگوزاری: ')+label(SVCS,v('q-svc'))];
+    if(v('q-type'))lines.push(T('نوع المشروع: ','Project type: ','جۆری پڕۆژە: ')+label(TYPES,v('q-type')));
+    if(v('q-area'))lines.push(T('المساحة / الطوابق: ','Area / floors: ','ڕووبەر / نهۆم: ')+v('q-area'));
+    if(v('q-msg'))lines.push('',T('التفاصيل: ','Details: ','وردەکاری: ')+v('q-msg'));
+    return lines.join('\n');
+  }
+  function missing(){
+    var m=[];
+    if(!v('q-name'))m.push(T('الاسم','your name','ناو'));
+    if(!/^[+\d][\d\s-]{6,}$/.test(v('q-phone')))m.push(T('رقم هاتف صحيح','a valid phone number','ژمارەی تەلەفۆنی دروست'));
+    if(!v('q-gov'))m.push(T('المحافظة','governorate','پارێزگا'));
+    if(!v('q-svc'))m.push(T('الخدمة المطلوبة','the service','خزمەتگوزاری'));
+    return m;
+  }
+  function showErr(m){$('q-err').textContent=m.length?T('يرجى إدخال: ','Please add ','تکایە ئەمانە بنووسە: ')+m.join(T('، ',', ','، ')):''}
+  function sync(){$('q-send').href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg())}
+  $('qForm').addEventListener('input',function(){sync();if($('q-err').textContent)showErr(missing())});
+  $('qForm').addEventListener('change',sync);
+  $('qForm').addEventListener('submit',function(e){e.preventDefault()});
+  $('q-send').addEventListener('click',function(e){
+    var m=missing();
+    if(m.length){e.preventDefault();showErr(m);return}
+    showErr([]);sync();$('q-ok').hidden=false;
+  });
+  $('q-copy').addEventListener('click',function(){
+    var m=missing(); if(m.length){showErr(m);return}
+    var b=$('q-copy'), t=msg(), p=$('q-preview');
+    var shown=function(){p.textContent=t;p.hidden=false;var r=document.createRange();r.selectNodeContents(p);var s=getSelection();s.removeAllRanges();s.addRange(r)};
+    var done=function(){var o=b.innerHTML;b.textContent=T('تم النسخ','Copied','کۆپی کرا');setTimeout(function(){b.innerHTML=o},1400)};
+    if(navigator.clipboard){navigator.clipboard.writeText(t).then(done,shown)}else{shown()}
+  });
+
+  /* catalog: a normal link on the hosted site; inside the Claude viewer it goes through the downloads capability */
+  var saver=null;
+  if(window.claude&&claude.use){claude.use('downloads').then(function(d){saver=d},function(){})}
+  ['cat-dl','prof-dl'].forEach(function(id){$(id).addEventListener('click',function(e){
+    if(!saver)return;
+    e.preventDefault();
+    var f=this.getAttribute('href');
+    fetch(f).then(function(r){return r.blob()})
+      .then(function(b){return saver.save({filename:f,data:b})})
+      .catch(function(){});
+  })});
+
+  function refresh(){
+    opts($('e-type'),TYPES.slice(0,3));
+    opts($('q-gov'),GOV,T('اختر المحافظة','Choose governorate','پارێزگا هەڵبژێرە'));
+    opts($('q-type'),TYPES,T('اختر النوع','Choose type','جۆر هەڵبژێرە'));
+    opts($('q-svc'),SVCS,T('اختر الخدمة','Choose a service','خزمەتگوزاری هەڵبژێرە'));
+    estimate(); sync(); projects();
+    if($('q-err').textContent)showErr(missing());
+  }
+  set(saved);
+})();
+</script>
+</body>
+</html>
