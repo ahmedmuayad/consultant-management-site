@@ -200,6 +200,14 @@ section.sec + section.sec .wrap{border-top:1px solid var(--line)}
 .proj h3{font-size:17px;font-weight:600}
 .proj .where{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--muted);font-size:13.5px;margin-top:4px}
 .proj p{font-size:14.5px;margin-top:8px}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gallery figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
+.gallery a{display:block}
+.gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--soft);transition:transform .3s}
+.gallery a:hover img{transform:scale(1.04)}
+.gallery figcaption{padding:10px 12px;font-size:13.5px;color:var(--muted);line-height:1.5}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.gallery{grid-template-columns:1fr 1fr;gap:10px}.gallery figcaption{padding:8px 10px;font-size:12.5px}}
 
 /* CTA band */
 .band{background:var(--accent);color:var(--accent-ink)}
@@ -746,6 +754,33 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
       <p><span data-l="ar">من خبرة 22 سنة في المواقع ومكاتب إدارة المشاريع في العراق.</span><span data-l="ku">لە 22 ساڵ ئەزموونی شوێنی کار و نووسینگەکانی بەڕێوەبردنی پڕۆژە لە عێراق.</span><span data-l="en">From 22 years on sites and in project offices across Iraq.</span></p>
     </div>
     <div class="projects" id="projList"></div>
+  </div>
+</section>
+
+<!-- ======================= SITE PHOTOS ======================= -->
+<section class="sec" id="photos">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">من مواقع العمل</span><span data-l="ku">لە شوێنەکانی کار</span><span data-l="en">From our sites</span></span>
+        <h2><span data-l="ar">صور حقيقية من مشاريعنا</span><span data-l="ku">وێنەی ڕاستەقینە لە پڕۆژەکانمان</span><span data-l="en">Real photos from our projects</span></h2>
+      </div>
+      <p><span data-l="ar">من معامل الإسمنت والسايلوات إلى التشطيبات والتسليم. اضغط على أي صورة لتكبيرها.</span><span data-l="ku">لە کارگەی چیمەنتۆ و سایلۆکانەوە تا تەواوکاری و ڕادەستکردن. کرتە لە هەر وێنەیەک بکە بۆ گەورەکردنی.</span><span data-l="en">From cement plants and silos to finishing and handover. Tap any photo to enlarge it.</span></p>
+    </div>
+    <div class="gallery">
+      <figure><a href="projects/site-01-supervision.jpg" target="_blank" rel="noopener"><img src="projects/site-01-supervision.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">إشراف ميداني في الموقع</span><span data-l="ku">سەرپەرشتیی مەیدانی لە شوێنی کار</span><span data-l="en">On-site supervision</span></figcaption></figure>
+      <figure><a href="projects/site-02-steel-structure.jpg" target="_blank" rel="noopener"><img src="projects/site-02-steel-structure.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">هيكل فولاذي لخط إنتاج معمل إسمنت</span><span data-l="ku">پەیکەری پۆڵا بۆ هێڵی بەرهەمی کارگەی چیمەنتۆ</span><span data-l="en">Steel structure, cement plant line</span></figcaption></figure>
+      <figure><a href="projects/site-03-silo.jpg" target="_blank" rel="noopener"><img src="projects/site-03-silo.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">صب سايلو خرساني</span><span data-l="ku">ڕشتنی سایلۆی کۆنکریتی</span><span data-l="en">Concrete silo construction</span></figcaption></figure>
+      <figure><a href="projects/site-04-foundation.jpg" target="_blank" rel="noopener"><img src="projects/site-04-foundation.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">تسليح أساس دائري كبير</span><span data-l="ku">ئاسنڕێژی بناغەیەکی بازنەیی گەورە</span><span data-l="en">Reinforcing a large circular foundation</span></figcaption></figure>
+      <figure><a href="projects/site-05-kiln-lift.jpg" target="_blank" rel="noopener"><img src="projects/site-05-kiln-lift.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">رفع مقطع الفرن الدوار</span><span data-l="ku">بەرزکردنەوەی بەشێکی کوورەی خولاوە</span><span data-l="en">Lifting a rotary kiln section</span></figcaption></figure>
+      <figure><a href="projects/site-06-concrete-pump.jpg" target="_blank" rel="noopener"><img src="projects/site-06-concrete-pump.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">صب الخرسانة بالمضخة</span><span data-l="ku">ڕشتنی کۆنکریت بە پەمپ</span><span data-l="en">Pumped concrete pour</span></figcaption></figure>
+      <figure><a href="projects/site-07-silo-works.jpg" target="_blank" rel="noopener"><img src="projects/site-07-silo-works.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">أعمال السايلو والهياكل</span><span data-l="ku">کاری سایلۆ و پەیکەرەکان</span><span data-l="en">Silo and structural works</span></figcaption></figure>
+      <figure><a href="projects/site-08-production-buildings.jpg" target="_blank" rel="noopener"><img src="projects/site-08-production-buildings.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">مباني الإنتاج قيد التنفيذ</span><span data-l="ku">بیناکانی بەرهەمهێنان لە کاتی دروستکردن</span><span data-l="en">Production buildings under construction</span></figcaption></figure>
+      <figure><a href="projects/site-09-team.jpg" target="_blank" rel="noopener"><img src="projects/site-09-team.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">فريق العمل أثناء صب الأعمدة</span><span data-l="ku">تیمی کار لە کاتی ڕشتنی کۆڵەکەکان</span><span data-l="en">Team on site during column pours</span></figcaption></figure>
+      <figure><a href="projects/site-10-finishing.jpg" target="_blank" rel="noopener"><img src="projects/site-10-finishing.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">التشطيبات النهائية قبل التسليم</span><span data-l="ku">تەواوکاریی کۆتایی پێش ڕادەستکردن</span><span data-l="en">Final finishing before handover</span></figcaption></figure>
+      <figure><a href="projects/site-11-masonry.jpg" target="_blank" rel="noopener"><img src="projects/site-11-masonry.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">أعمال البناء وتمديد الخدمات</span><span data-l="ku">کاری دیوار و ڕاکێشانی خزمەتگوزارییەکان</span><span data-l="en">Masonry and services chasing</span></figcaption></figure>
+      <figure><a href="projects/site-12-formwork.jpg" target="_blank" rel="noopener"><img src="projects/site-12-formwork.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">تجهيز القوالب الخشبية</span><span data-l="ku">ئامادەکردنی قاڵبی دار</span><span data-l="en">Preparing timber formwork</span></figcaption></figure>
+    </div>
   </div>
 </section>
 
