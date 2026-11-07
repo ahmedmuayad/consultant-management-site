@@ -629,7 +629,9 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
         <div class="split" id="r-split" aria-hidden="true"></div>
         <div class="legend" id="r-legend"></div>
         <p class="disc"><span data-l="ar">تقدير أولي (±12%) مبني على متوسط أسعار السوق في العراق. للحصول على رقم دقيق نعدّ لك جدول كميات من مخططاتك.</span><span data-l="ku">خەمڵاندنی سەرەتایی (±12%) لەسەر بنەمای تێکڕای نرخی بازاڕ لە عێراق. بۆ ژمارەیەکی ورد، خشتەی بڕەکانت لە نەخشەکانتەوە بۆ ئامادە دەکەین.</span><span data-l="en">A first estimate (±12%) based on average Iraqi market rates. For an exact figure we prepare a BOQ from your drawings.</span></p>
-        <a class="btn yellow" id="r-cta" href="#contact"><span data-l="ar">اطلب جدول كميات دقيق</span><span data-l="ku">داوای خشتەی بڕی ورد بکە</span><span data-l="en">Get an exact BOQ</span></a>
+        <div class="r-actions" style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn yellow" id="r-cta" href="#contact"><span data-l="ar">اطلب جدول كميات دقيق</span><span data-l="ku">داوای خشتەی بڕی ورد بکە</span><span data-l="en">Get an exact BOQ</span></a>
+        <a class="btn line" id="r-wa" href="https://wa.me/9647876979292" target="_blank" rel="noopener"><span data-l="ar">أرسل التقدير للمهندس على واتساب (مجاناً)</span><span data-l="ku">خەمڵاندنەکە بۆ ئەندازیار بنێرە لە واتسئاپ (بەخۆڕایی)</span><span data-l="en">Send this estimate to the engineer on WhatsApp (free)</span></a></div>
+        <p class="disc"><a href="Consultant-Management-Payment-Guide.pdf" target="_blank" rel="noopener" style="color:inherit;font-weight:600">📘 <span data-l="ar">حمّل مجاناً: 10 فحوصات قبل أن تدفع لمقاولك (PDF)</span><span data-l="ku">بەخۆڕایی دابەزێنە: 10 پشکنین پێش ئەوەی پارە بدەیت بە بەڵێندەرەکەت (PDF)</span><span data-l="en">Free download: 10 checks before you pay your contractor (PDF)</span></a></p>
       </div>
     </div>
   </div>
@@ -1103,6 +1105,20 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
     $('r-split').innerHTML=SPLIT.map(function(s){return '<i style="width:'+s[2]+'%;background:'+s[3]+'"></i>'}).join('');
     $('r-legend').innerHTML=SPLIT.map(function(s){return '<span style="--c:'+s[3]+'"><em>'+T(s[0],s[1],s[4])+'</em><b>'+fmt(cost*s[2]/100)+'</b></span>'}).join('');
   }
+  function estMsg(){
+    var finEl=document.querySelector('input[name="e-fin"]:checked'), fv=finEl?finEl.value:'std';
+    var finTxt={eco:T('اقتصادي','Economy','ئابووری'),std:T('متوسط','Standard','مامناوەند'),pre:T('فاخر','Premium','بەرز')}[fv];
+    return [T('السلام عليكم، استخدمت حاسبة الكلفة في موقعكم وأريد رأي المهندس:','Hello, I used the cost calculator on your website and would like the engineer\x27s opinion:','سڵاو، حاسیبەی تێچووم لە ماڵپەڕەکەتان بەکارهێنا و ڕای ئەندازیار دەمەوێت:'),'',
+      T('نوع المشروع: ','Project type: ','جۆری پڕۆژە: ')+label(TYPES,$('e-type').value),
+      T('المساحة: ','Area: ','ڕووبەر: ')+fmt(+$('e-area').value||0)+' m² × '+(+$('e-floors').value||1)+T(' طوابق',' floors',' نهۆم'),
+      finTxt?T('الإنهاء: ','Finish: ','تەواوکاری: ')+finTxt:'',
+      T('التقدير: ','Estimate: ','خەمڵاندن: ')+$('r-iqd').textContent+' ('+$('r-usd').textContent+')','',
+      T('المحافظة: ','Governorate: ','پارێزگا: ')].join('\n');
+  }
+  function estSync(){$('r-wa').href='https://wa.me/'+WA+'?text='+encodeURIComponent(estMsg())}
+  $('estForm').addEventListener('input',estSync);
+  $('estForm').addEventListener('change',estSync);
+  $('r-wa').addEventListener('click',estSync);
   $('estForm').addEventListener('input',estimate);
   $('estForm').addEventListener('change',estimate);
   $('estForm').addEventListener('submit',function(e){e.preventDefault()});
@@ -1168,7 +1184,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
     opts($('q-gov'),GOV,T('اختر المحافظة','Choose governorate','پارێزگا هەڵبژێرە'));
     opts($('q-type'),TYPES,T('اختر النوع','Choose type','جۆر هەڵبژێرە'));
     opts($('q-svc'),SVCS,T('اختر الخدمة','Choose a service','خزمەتگوزاری هەڵبژێرە'));
-    estimate(); sync(); projects();
+    estimate(); estSync(); sync(); projects();
     if($('q-err').textContent)showErr(missing());
   }
   set(saved);
