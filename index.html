@@ -60,8 +60,10 @@ html[lang="ckb"]{--ar:"Noto Sans Arabic","IBM Plex Sans Arabic","Segoe UI",Tahom
 .brand svg{width:42px;height:42px;flex:none}
 .brand b{display:block;font-family:var(--en);font-weight:700;font-size:19px;letter-spacing:.06em;line-height:1.05;white-space:nowrap}
 .brand small{display:block;font-size:11.5px;color:var(--ink-muted);white-space:nowrap}
-.links{display:flex;gap:22px;margin-inline-start:auto;font-size:15px}
+.links{display:flex;gap:16px;margin-inline-start:auto;font-size:14.5px}
 .links a{text-decoration:none;color:var(--ink-muted)}
+@media (min-width:1121px){.links a{white-space:nowrap}}
+@media (max-width:1100px){.links{display:none}}
 .links a:hover{color:var(--ink-fg)}
 .tools{display:flex;gap:10px;align-items:center}
 .langs{display:flex;border:1px solid var(--ink-line);border-radius:6px;overflow:hidden}
@@ -208,6 +210,15 @@ section.sec + section.sec .wrap{border-top:1px solid var(--line)}
 .gallery figcaption{padding:10px 12px;font-size:13.5px;color:var(--muted);line-height:1.5}
 @media (max-width:900px){.gallery{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:640px){.gallery{grid-template-columns:1fr 1fr;gap:10px}.gallery figcaption{padding:8px 10px;font-size:12.5px}}
+.svcs.two{grid-template-columns:repeat(2,1fr)}
+.rsub{margin:40px 0 14px;font-size:18px;font-weight:600}
+.vids{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.vids figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
+.vids video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.vids figcaption{padding:10px 12px;font-size:13.5px;color:var(--muted);line-height:1.5}
+.rope-g{display:block;column-count:3;column-gap:14px}.rope-g figure{break-inside:avoid;margin:0 0 14px}.rope-g img{aspect-ratio:auto;height:auto}
+@media (max-width:980px){.vids{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.rope-g{column-count:2;column-gap:10px}.rope-g figure{margin-bottom:10px}.svcs.two{grid-template-columns:1fr}.vids{grid-template-columns:1fr 1fr;gap:10px}.vids figcaption{padding:8px 10px;font-size:12.5px}}
 
 /* CTA band */
 .band{background:var(--accent);color:var(--accent-ink)}
@@ -363,6 +374,7 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
     </a>
     <nav class="links" aria-label="Sections">
       <a href="#services"><span data-l="ar">الخدمات</span><span data-l="ku">خزمەتگوزارییەکان</span><span data-l="en">Services</span></a>
+      <a href="#rope"><span data-l="ar">الحبال والإضاءة</span><span data-l="ku">پەت و ڕووناکی</span><span data-l="en">Rope access</span></a>
       <a href="#estimate"><span data-l="ar">حاسبة الكلفة</span><span data-l="ku">ژمێرەری تێچوون</span><span data-l="en">Cost estimator</span></a>
       <a href="#packages"><span data-l="ar">الباقات</span><span data-l="ku">پاکێجەکان</span><span data-l="en">Packages</span></a>
       <a href="#faq"><span data-l="ar">الأسئلة</span><span data-l="ku">پرسیارەکان</span><span data-l="en">FAQ</span></a>
@@ -792,6 +804,67 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-
       <figure><a href="projects/site-23-factory-motors.jpg" target="_blank" rel="noopener"><img src="projects/site-23-factory-motors.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">فحص المعدات في مصنع المورّد قبل الشحن</span><span data-l="ku">پشکنینی ئامێرەکان لە کارگەی دابینکەر پێش ناردن</span><span data-l="en">Equipment inspection at the supplier's factory</span></figcaption></figure>
       <figure><a href="projects/site-21-factory-machining.jpg" target="_blank" rel="noopener"><img src="projects/site-21-factory-machining.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">متابعة تصنيع القطع في المصنع</span><span data-l="ku">بەدواداچوونی دروستکردنی پارچەکان لە کارگە</span><span data-l="en">Following up part machining at the factory</span></figcaption></figure>
       <figure><a href="projects/site-26-beam-welding.jpg" target="_blank" rel="noopener"><img src="projects/site-26-beam-welding.jpg" alt="" loading="lazy"></a><figcaption><span data-l="ar">لحام آلي لجسور الحديد</span><span data-l="ku">لەحیمی ئۆتۆماتیکی بیمی پۆڵا</span><span data-l="en">Automatic welding of steel girders</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ROPE ACCESS & LIGHTING ======================= -->
+<section class="sec" id="rope">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow"><span data-l="ar">الوصول بالحبال والإضاءة</span><span data-l="ku">کارکردن بە پەت و ڕووناکی</span><span data-l="en">Rope access &amp; lighting</span></span>
+        <h2><span data-l="ar">أعمال الحبال والإضاءة على المباني العالية</span><span data-l="ku">کاری پەت و ڕووناکی لەسەر بینا بەرزەکان</span><span data-l="en">Rope access and lighting for high-rise buildings</span></h2>
+      </div>
+      <p><span data-l="ar">بالشراكة مع شركة Red Line Rope Access، ولأعمال الوصول بالحبال والإضاءة فقط.</span><span data-l="ku">بە هاوبەشی لەگەڵ کۆمپانیای Red Line Rope Access، تەنیا بۆ کاری پەت و ڕووناکی.</span><span data-l="en">In joint venture with Red Line Rope Access, for rope access and lighting works only.</span></p>
+    </div>
+
+    <div class="svcs two">
+      <article class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 2v7" stroke="#e2a300"/><circle cx="12" cy="12" r="3" stroke="#fff"/><path d="M12 15v7" stroke="#fff"/><path d="M7 22h10" stroke="#e2a300"/></svg></div>
+        <h3><span data-l="ar">أعمال الوصول بالحبال (Rope Access)</span><span data-l="ku">کارکردن بە پەت (Rope Access)</span><span data-l="en">Rope access works</span></h3>
+        <p><span data-l="ar">أعمال على واجهات المباني والمواقع صعبة الوصول بأمان، دون الحاجة إلى سقالات ورافعات.</span><span data-l="ku">کار لەسەر ڕووکاری بیناکان و شوێنە سەختەکان بە سەلامەتی و بێ پێویستی بە سەکۆ و کرێن.</span><span data-l="en">Safe work on building facades and hard-to-reach places, without the need for scaffolding or cranes.</span></p>
+        <ul>
+          <li><span data-l="ar">تنظيف الواجهات: حجر وزجاج وسمنت وألواح مركّبة</span><span data-l="ku">پاککردنەوەی ڕووکار: بەرد، شووشە، چیمەنتۆ و پانێڵی تێکەڵ</span><span data-l="en">Facade cleaning: stone, glass, cement, composite panels</span></li>
+          <li><span data-l="ar">الصباغة والطلاء</span><span data-l="ku">بۆیەکردن و ڕووپۆشکردن</span><span data-l="en">Painting and coating</span></li>
+          <li><span data-l="ar">تركيب الزجاج واستبداله</span><span data-l="ku">دانان و گۆڕینی شووشە</span><span data-l="en">Glass installation and replacement</span></li>
+          <li><span data-l="ar">العزل المائي ومعالجة الفواصل</span><span data-l="ku">دژە ئاو و مۆرکردنی جومگەکان</span><span data-l="en">Waterproofing and joint sealing</span></li>
+        </ul>
+      </article>
+      <article class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 18h6M10 21h4" stroke="#fff"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z" stroke="#e2a300"/></svg></div>
+        <h3><span data-l="ar">إضاءة المباني العالية</span><span data-l="ku">ڕووناکی بینا بەرزەکان</span><span data-l="en">High-rise lighting</span></h3>
+        <p><span data-l="ar">تركيب إضاءة معمارية على العمارات السكنية والتجارية العالية، مباشرة من الحبال.</span><span data-l="ku">دانانی ڕووناکی ئەندازیاری لەسەر بینا بەرزەکانی نیشتەجێبوون و بازرگانی، ڕاستەوخۆ بە پەت.</span><span data-l="en">Architectural lighting installed on high-rise apartment and commercial buildings, working directly from ropes.</span></p>
+        <ul>
+          <li><span data-l="ar">إضاءة LED خطية على الحواف والزوايا والسطوح</span><span data-l="ku">ڕووناکی LED بە شێوەی هێڵ لەسەر لێوار، گۆشە و سەربانی بینا</span><span data-l="en">LED line and outline lighting on edges, corners and rooftops</span></li>
+          <li><span data-l="ar">أنظمة RGB وDMX متعددة الألوان</span><span data-l="ku">سیستەمی ڕووناکی RGB و DMX</span><span data-l="en">RGB and DMX color-changing systems</span></li>
+          <li><span data-l="ar">شرائط LED مرنة وكشافات الواجهات</span><span data-l="ku">پەتی نەرمی LED و چرای ڕووی بینا</span><span data-l="en">Flexible LED strips and facade light fixtures</span></li>
+          <li><span data-l="ar">التثبيت والتمديد والعزل على الارتفاع</span><span data-l="ku">بەستن، کەیبڵ کێشان و پاراستن لە ئاو لە بەرزایی</span><span data-l="en">Cabling, fixing and sealing at height</span></li>
+          <li><span data-l="ar">إصلاح واستبدال إضاءة الواجهات القائمة</span><span data-l="ku">چاککردنەوە و گۆڕینی ڕووناکییە کۆنەکانی بینا</span><span data-l="en">Repair and replacement of existing facade lights</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <h3 class="rsub"><span data-l="ar">فيديو</span><span data-l="ku">ڤیدیۆ</span><span data-l="en">Videos</span></h3>
+    <div class="vids">
+      <figure><video controls playsinline preload="none" poster="rope-access/video-01-lighting-night-towers.jpg" aria-label="Residential towers with LED line lighting at night"><source src="rope-access/video-01-lighting-night-towers.mp4" type="video/mp4"></video><figcaption><span data-l="ar">أبراج سكنية بإضاءة LED الخطية ليلاً</span><span data-l="ku">بورجە نیشتەجێبوونەکان بە ڕووناکی LED لە شەودا</span><span data-l="en">Residential towers with LED line lighting at night</span></figcaption></figure>
+      <figure><video controls playsinline preload="none" poster="rope-access/video-02-tower-descent.jpg" aria-label="Rope access technician descending a residential tower"><source src="rope-access/video-02-tower-descent.mp4" type="video/mp4"></video><figcaption><span data-l="ar">فني حبال ينزل على برج سكني</span><span data-l="ku">تەکنیسیەنی پەت لە بورجێکی نیشتەجێبوون دێتە خوارەوە</span><span data-l="en">Rope access technician descending a residential tower</span></figcaption></figure>
+      <figure><video controls playsinline preload="none" poster="rope-access/video-03-glass-tower-team.jpg" aria-label="Rope access team on a curved glass tower"><source src="rope-access/video-03-glass-tower-team.mp4" type="video/mp4"></video><figcaption><span data-l="ar">فريق حبال على برج زجاجي منحنٍ</span><span data-l="ku">تیمی پەت لەسەر بورجێکی شووشەیی چەماوە</span><span data-l="en">Rope access team on a curved glass tower</span></figcaption></figure>
+      <figure><video controls playsinline preload="none" poster="rope-access/video-04-glass-facade-cleaning.jpg" aria-label="Cleaning a glass facade by rope access"><source src="rope-access/video-04-glass-facade-cleaning.mp4" type="video/mp4"></video><figcaption><span data-l="ar">تنظيف واجهة زجاجية بالحبال</span><span data-l="ku">پاککردنەوەی ڕووکاری شووشەیی بە پەت</span><span data-l="en">Cleaning a glass facade by rope access</span></figcaption></figure>
+      <figure><video controls playsinline preload="none" poster="rope-access/video-05-rig-tower-cleaning.jpg" aria-label="Cleaning work on a drilling rig tower"><source src="rope-access/video-05-rig-tower-cleaning.mp4" type="video/mp4"></video><figcaption><span data-l="ar">أعمال تنظيف على برج حفر</span><span data-l="ku">کاری پاککردنەوە لەسەر بورجی هەڵکەندن</span><span data-l="en">Cleaning work on a drilling rig tower</span></figcaption></figure>
+    </div>
+
+    <h3 class="rsub"><span data-l="ar">صور</span><span data-l="ku">وێنە</span><span data-l="en">Photos</span></h3>
+    <div class="gallery rope-g">
+      <figure><a href="rope-access/photo-01-lighting-night-tower.jpg" target="_blank" rel="noopener"><img src="rope-access/photo-01-lighting-night-tower.jpg" alt="Vertical LED line lighting on a high-rise apartment tower at night" loading="lazy"></a><figcaption><span data-l="ar">إضاءة LED خطية على برج سكني عالٍ ليلاً</span><span data-l="ku">ڕووناکی LED بە هێڵ لەسەر بورجێکی نیشتەجێبوونی بەرز لە شەودا</span><span data-l="en">Vertical LED line lighting on a high-rise apartment tower at night</span></figcaption></figure>
+      <figure><a href="rope-access/photo-02-lighting-facade-outline.jpg" target="_blank" rel="noopener"><img src="rope-access/photo-02-lighting-facade-outline.jpg" alt="LED outline lighting on a building facade at night" loading="lazy"></a><figcaption><span data-l="ar">إضاءة LED تحدّد واجهة مبنى ليلاً</span><span data-l="ku">ڕووناکی LED کە دەوری ڕووکاری بینایەک دیاری دەکات لە شەودا</span><span data-l="en">LED outline lighting on a building facade at night</span></figcaption></figure>
+      <figure><a href="rope-access/photo-03-rooftop-team.jpg" target="_blank" rel="noopener"><img src="rope-access/photo-03-rooftop-team.jpg" alt="Rope access team at the roof edge of a high-rise apartment building" loading="lazy"></a><figcaption><span data-l="ar">فريق الحبال على حافة سطح عمارة سكنية عالية</span><span data-l="ku">تیمی پەت لەسەر لێواری سەربانی بینایەکی نیشتەجێبوونی بەرز</span><span data-l="en">Rope access team at the roof edge of a high-rise apartment building</span></figcaption></figure>
+      <figure><a href="rope-access/photo-04-facade-inspection.jpg" target="_blank" rel="noopener"><img src="rope-access/photo-04-facade-inspection.jpg" alt="Rope access technician inspecting a facade structure at height" loading="lazy"></a><figcaption><span data-l="ar">فني حبال يفحص هيكل الواجهة على الارتفاع</span><span data-l="ku">تەکنیسیەنی پەت پشکنینی پەیکەری ڕووکار دەکات لە بەرزاییدا</span><span data-l="en">Rope access technician inspecting a facade structure at height</span></figcaption></figure>
+      <figure><a href="rope-access/photo-05-highrise-facade.jpg" target="_blank" rel="noopener"><img src="rope-access/photo-05-highrise-facade.jpg" alt="Facade of a multi-storey high-rise building" loading="lazy"></a><figcaption><span data-l="ar">واجهة مبنى عالٍ متعدد الطوابق</span><span data-l="ku">ڕووکاری بینایەکی بەرزی چەند نهۆمی</span><span data-l="en">Facade of a multi-storey high-rise building</span></figcaption></figure>
+      <figure><a href="rope-access/photo-06-glass-facade.jpg" target="_blank" rel="noopener"><img src="rope-access/photo-06-glass-facade.jpg" alt="Glass facade of a multi-storey building" loading="lazy"></a><figcaption><span data-l="ar">واجهة زجاجية لمبنى متعدد الطوابق</span><span data-l="ku">ڕووکاری شووشەیی بینایەکی چەند نهۆمی</span><span data-l="en">Glass facade of a multi-storey building</span></figcaption></figure>
+      <figure><a href="rope-access/photo-07-facade-panel.jpg" target="_blank" rel="noopener"><img src="rope-access/photo-07-facade-panel.jpg" alt="Wrapped facade panel on site" loading="lazy"></a><figcaption><span data-l="ar">لوح واجهة ملفوف في الموقع</span><span data-l="ku">پانێڵێکی ڕووکار کە پێچراوەتەوە لە شوێنی کار</span><span data-l="en">Wrapped facade panel on site</span></figcaption></figure>
+      <figure><a href="rope-access/photo-08-rig-tower-1.jpg" target="_blank" rel="noopener"><img src="rope-access/photo-08-rig-tower-1.jpg" alt="Rope access work on a drilling rig tower" loading="lazy"></a><figcaption><span data-l="ar">عمل بالحبال على برج حفر</span><span data-l="ku">کار بە پەت لەسەر بورجی هەڵکەندن</span><span data-l="en">Rope access work on a drilling rig tower</span></figcaption></figure>
+      <figure><a href="rope-access/photo-09-rig-tower-2.jpg" target="_blank" rel="noopener"><img src="rope-access/photo-09-rig-tower-2.jpg" alt="Rope access work on a drilling rig tower (closer view)" loading="lazy"></a><figcaption><span data-l="ar">عمل بالحبال على برج حفر (لقطة أقرب)</span><span data-l="ku">کار بە پەت لەسەر بورجی هەڵکەندن (وێنەی نزیکتر)</span><span data-l="en">Rope access work on a drilling rig tower (closer view)</span></figcaption></figure>
     </div>
   </div>
 </section>
