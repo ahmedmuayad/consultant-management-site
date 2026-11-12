@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ahmedmuayad.github.io/consultant-management-site/sitemap.xml
+Sitemap: https://www.consultantmanagement-iq.com/sitemap.xml
